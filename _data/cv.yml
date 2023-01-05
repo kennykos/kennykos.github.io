@@ -70,6 +70,14 @@
       items: 
         - Illinois Geometry Lab Research Award
 
+- title: Community Involvement 
+  type: time_table
+  contents:
+    - year: 2022
+      items: 
+        - Illinois Geometry Lab Research Award
+
+
 # - title: Academic Interests
 #   type: nested_list
 #   contents:
