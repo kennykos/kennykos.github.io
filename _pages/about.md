@@ -22,6 +22,3 @@ I recently co-authored two articles currently in the peer review process:
 * <a href="https://arxiv.org/abs/2210.06415" target="_blank">Packing densities of Delzant and semitoric polygons</a> led by Dr. Joseph Palmer and with Yu Du, Yichen Liu, Jeff Massman, Joseph Palmer, Timothy Thieme, Jerry Wu, Zheyu Zhang though the Illinois Geometry Lab at the University of Illinois Urbana Champaign.
 
 The first article is the culmination of three semesters of work in the Illinois Geometry Lab. I wrote the second article which I am presenting at the 2023 Transportation Research Board Annual Meeting, while participating in the Science Undergraduate Laboratory Internship program at the National Renewable Energy Lab in Golden, Colorado.
-
-
-CV: <a href="https://kennykos.github.io/assets/pdf/Kosmacher_CV.pdf" target="_blank">here</a>
