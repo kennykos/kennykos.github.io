@@ -56,6 +56,36 @@
         - <b>Presented results</b> at University of Illinois Urbana-Campaign Illinois Geometry Lab Poster Presentation Spring 2021, Fall 2022, Spring 2022.
         - <b>Received</b> 2022 Illinois Geometry Lab Outstanding Research Award.
 
+- title: Community Involvement
+  type: time_table
+  contents:
+    - title: STEM Mentor
+      year: 2022
+      description: 
+        - Assisted in the teaching of a data-science curriculum at Kenwood Academy high school in Chicago for 11th and 12th graders.
+        - Developed a plant biology and environmental sustainability curriculum for 2nd graders which will be taught at the Urbana Neighborhood Connections Center.
+    - title: Students for Environmental Concerns
+      institution: Secretary (August 2021-May 2022), President (August 2022-May 2023)
+      year: 2020-2023
+      description:
+      - Lead an executive board of 10 undergraduates and an organization with 50+ general members.
+      - Oversee fundraising of $500+ per academic semester.
+      - title: Develop and oversee various projects
+        contents:
+          - Develop and teach curriculum regarding environmental ecology and sustainability to Urbana elementary school students.
+          - Work with Facilities and Services to implement a green-rooftop on the engineering campus.
+          - Run a community garden with a local non-profit.
+          - Generate and publish independent University of Illinois System Green Investment Report.
+          - Publish the Green Observer Environmental Magazine
+          - Implement Illinois Climate Action Plan objectives.
+    - title: Illinois Student Governemnt
+      year: 2019-2022
+      institution: Champaign County Board Liaison
+      description:
+        - Served as Quorum member for the Student Government Department of Governmental Relations.
+        - Attended Champaign County Board meetings and engaged in discussion with council members to build and maintain healthy relations between the Illinois Student Government and Champaign County.
+        - Co-authored resolutions regarding criminal justice
+
 - title: Open Source Projects
   type: time_table
   contents:
@@ -63,14 +93,10 @@
       year: 2022
       description: Implemented a continuous mode-segmented trajectory <a href="https://github.com/kennykos/mobilitynet-analysis-scripts/blob/pr_staging/classification_analysis.ipynb" target="_blank">evaluation framework</a> to evaluate the NREL OpenPATH pipeline.
 
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - year: 2022
-      items: 
-        - Illinois Geometry Lab Research Award
 
-- title: Community Involvement 
+
+
+- title: Honors and Awards
   type: time_table
   contents:
     - year: 2022
