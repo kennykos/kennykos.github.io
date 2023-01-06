@@ -7,7 +7,7 @@ date: 2022-12-30 00:00:00 +0700
 cover: "the_lying_life_of_adults.jpg"
 olid: OL20884629W # if no image (Open Library ID)
 isbn: 9781787702363 # if no olid (dashes are optional)
-title: "Lying Life of Adults"
+title: "The Lying Life of Adults"
 author: Elena Ferrante
 year: 2018
 status: Finished 
