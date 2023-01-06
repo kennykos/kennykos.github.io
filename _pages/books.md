@@ -14,4 +14,4 @@ This is where your book reviews will be listed - click on one to see the full re
 *Pro tip: add a `list_title:` to this page's [front matter](https://jekyllrb.com/docs/frontmatter/) to override the default "Latest reviews"!* -->
 
 > I haven't read half the books they said I read.
-<br/> – Yogi Bera, on reading books, early 20$$^{th}$$ century
+<br/> – Yogi Berra, on reading books, middle 20$$^{th}$$ century
