@@ -16,7 +16,7 @@ status: Finished
 
 Through a curious and crude Giovanna and a spiteful yet loving Aunt Vittoria, Elena Ferrante builds a Naples that tears away the facade of sophistication and dignity worn by the upper class to reveal a world of pain and deception. As Giovanna’s eyes are opened to the truer human nature that possesses all whom she previously unconditionally adored, she becomes infatuated with her evangelizers, those in the working class she was taught to pity, and of course that damned bracelet; coming of age into an upside down world, led by the beautiful and humble Roberto.
 
-Ferrante may let Giovanna escape the hypocrisies of Naple’s upper class, but she can not escape the tragedy of the human condition. It is in the thrilling final acts that Giannina newly christened saviors are brought down to be just as pathetic her villains, leaving Giannina spinning in a world we all know to well; a world where each of us must all leave the safety and beauty of our bracelets behind, venturing into the vast oneness dishonesty of what we call adulthood.
+Ferrante may let Giovanna escape the hypocrisies of Naple’s upper class, but she can not escape the tragedy of the human condition. It is in the thrilling final acts that Giannina's newly christened saviors are brought down to be just as pathetic her villains, leaving Giannina spinning in a world we all know to well; a world where each of us must all leave the safety and beauty of our bracelets behind, venturing into the vast oneness dishonesty of what we call adulthood.
 
 The Lying Life of Adults tactfully guides Giovanna to the understanding that neither class nor religion nor gender nor age differentiates our base selves; the most honest way for a child to come of age. 
 
