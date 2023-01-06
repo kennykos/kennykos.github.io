@@ -5,7 +5,7 @@ published: true
 layout: review
 date: 2021-04-27 0:0:0 +0700
 cover: "the-ballad-of-the-landlord.jpg"
-olid: OL1090364M # if no image (Open Library ID)
+olid:  # if no image (Open Library ID)
 isbn: # if no olid (dashes are optional)
 title: "The Ballad of the Landlord"
 author: Langston Hughes
