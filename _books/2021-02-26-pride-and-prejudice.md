@@ -8,8 +8,8 @@ cover: "pride-and-prejudice.jpg"
 olid: OL7245993M # if no image (Open Library ID)
 isbn:  # if no olid (dashes are optional)
 title: "Pride and Prejudice"
-author: Janue Austin
-year: 2018
+author: Jane Austin
+year: 1812
 status: Finished 
 
 ---
