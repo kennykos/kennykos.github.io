@@ -3,8 +3,8 @@
 published: true
 
 layout: review
-date: 2018-01-01 12:34:56 +0700
-cover: "in-the-penal-colony.jpg"
+date: 2021-03-28 0:0:0 +0700
+cover: "in-the-penal-coIony.jpg"
 olid: OL589993M # if no image (Open Library ID)
 isbn: # if no olid (dashes are optional)
 title: "In the Penal Colony"
