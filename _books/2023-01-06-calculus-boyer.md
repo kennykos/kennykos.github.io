@@ -14,4 +14,4 @@ status: Queued
 
 ---
 
-Recommended to me by Dr. Zoi Rapti, this book will officially end my streak of XX female authored books.
+Recommended to me by Dr. Zoi Rapti, this book will officially end my streak of ?? female authored books.
