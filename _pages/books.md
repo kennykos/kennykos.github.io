@@ -1,7 +1,7 @@
 ---
 layout: books
 permalink: /books/
-title: my bookshelf
+title: My Bookshelf
 nav: true
 nav_order: 3
 # list_title: My custom list title
