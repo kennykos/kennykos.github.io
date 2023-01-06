@@ -1,9 +1,9 @@
-<!-- ---
+---
 layout: page
-title: project 6
-description: a project with no image
-img:
-importance: 0
+title: The Bagel
+description: a project with a background image
+img: assets/img/12.jpg
+importance: 1
 category: fun
 ---
 
@@ -77,4 +77,4 @@ Here's the code for the last row of images above:
     </div>
 </div>
 ```
-{% endraw %} -->
+{% endraw %}

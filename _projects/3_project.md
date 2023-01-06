@@ -1,10 +1,10 @@
----
+<!-- ---
 layout: page
 title: project 3
 description: a project that redirects to another website
 img: assets/img/7.jpg
 redirect: https://unsplash.com
-importance: 3
+importance: 0
 category: work
 ---
 
@@ -78,4 +78,4 @@ Here's the code for the last row of images above:
     </div>
 </div>
 ```
-{% endraw %}
+{% endraw %} -->

@@ -1,10 +1,11 @@
-<!-- ---
+---
 layout: page
-title: project 6
-description: a project with no image
-img:
+title: Fossil Fuel Divestment
+description: a project that redirects to another website
+img: assets/img/7.jpg
+redirect: https://unsplash.com
 importance: 0
-category: fun
+category: work
 ---
 
 Every project has a beautiful feature showcase page.
@@ -77,4 +78,4 @@ Here's the code for the last row of images above:
     </div>
 </div>
 ```
-{% endraw %} -->
+{% endraw %}

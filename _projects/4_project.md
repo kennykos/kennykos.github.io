@@ -1,9 +1,9 @@
----
+<!-- ---
 layout: page
 title: project 4
 description: another without an image
 img:
-importance: 3
+importance: 0
 category: fun
 ---
 
@@ -77,4 +77,4 @@ Here's the code for the last row of images above:
     </div>
 </div>
 ```
-{% endraw %}
+{% endraw %} -->
