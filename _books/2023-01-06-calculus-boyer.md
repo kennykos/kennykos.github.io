@@ -10,7 +10,7 @@ isbn: # if no olid (dashes are optional)
 title: "The History of the Calculus and Its Conceptual Development"
 author: Carl B. Boyer
 year: 2018
-status: Queued 
+status: Reading 
 
 ---
 

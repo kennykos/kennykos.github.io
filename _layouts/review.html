@@ -2,9 +2,11 @@
 layout: default
 ---
 {% include base_path %}
-
+   {% if page.author %}
     <h1> Thoughts on reading <i>{{page.title}}</i> by {{ page.author}}. </h1>
-
+   {% elsif page.editor %}
+    <h1> Thoughts on reading <i>{{page.title}}</i>  edited by {{ page.editor}}. </h1>
+   {% endif %}
    {% assign content = page.content | strip_newlines %}
 
    {% if content == "" %}
