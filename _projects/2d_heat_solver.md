@@ -2215,7 +2215,7 @@ u_t = \Delta u
 </script><p>on a complex two-dimentional domain; a room with with walls (<em>Neumann boundary condition</em>), windows (<em>Dirichlet boundary condition</em>) and radiators (heat sources).</p>
 <p>In <strong>Part 1</strong>, we build up our grid, develope a scheme to handle boundary conditions, preform von Neumann stability analysis to choose a time step for our forward Euler solver, and then use an explicit time integrator to solve our equation.</p>
 <p>In <strong>Part 2</strong>, we use a second-order accurate diagonally implicit time integrator, solve for a steady state solution, and implement the Jacobi and <em>damped</em> Jacobi method to solve for our steady state solution.</p>
-<p>In <strong>Part 3</strong>, we implemet a V-Vycle Geometric Multigrid up to a 4-factor coarsening of our mesh, using restriction, prolongation, and Laplace matrices.</p>
+<p>In <strong>Part 3</strong>, we implemet a V-Cycle Geometric Multigrid up to a 4-factor coarsening of our mesh, using restriction, prolongation, and Laplace matrices.</p>
 
 </div>
 </div>
