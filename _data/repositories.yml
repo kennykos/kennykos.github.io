@@ -4,6 +4,7 @@ github_users:
 github_repos:
   - toriis-portal/toriis-analysis
   - toriis-portal/toriis
+  - kennykos/kennykos.github.io
   - MobilityNet/mobilitynet-analysis-scripts
   - e-mission/e-mission-server
   - kennykos/UIS-assets
