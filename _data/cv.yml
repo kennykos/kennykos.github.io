@@ -91,7 +91,7 @@
   contents:
     - title: <a href="https://github.com/toriis-portal">TORIIS</a>
       year: 2023
-      description: Created the Transparent and Open Resource for Institutional Investments in collaboration with <a href="https://uiuc.hack4impact.org/">Hack4Impact UIUC</a> and <a href="https://secsatuiuc.web.illinois.edu/">Students for Environmental Concerns</a>.
+      description: Building the Transparent and Open Resource for Institutional Investments in collaboration with <a href="https://uiuc.hack4impact.org/">Hack4Impact UIUC</a> and <a href="https://secsatuiuc.web.illinois.edu/">Students for Environmental Concerns</a>.
     - title: <a href="https://github.com/MobilityNet/mobilitynet-analysis-scripts">Mobility Net</a>
       year: 2022
       description: Implemented a continuous mode-segmented trajectory <a href="https://github.com/kennykos/mobilitynet-analysis-scripts/blob/pr_staging/classification_analysis.ipynb" target="_blank">evaluation framework</a> to evaluate the NREL OpenPATH pipeline.
