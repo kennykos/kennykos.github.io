@@ -78,7 +78,7 @@
           - Generate and publish independent University of Illinois System Green Investment Report.
           - Publish the Green Observer Environmental Magazine
           - Implement Illinois Climate Action Plan objectives.
-    - title: Illinois Student Governemnt
+    - title: Illinois Student Government
       year: 2019-2022
       institution: Champaign County Board Liaison
       description:
@@ -89,6 +89,9 @@
 - title: Open Source Projects
   type: time_table
   contents:
+    - title: <a href="https://github.com/toriis-portal">TORIIS</a>
+      year: 2023
+      description: Created the Transparent and Open Resource for Institutional Investments in collaboration with <a href="https://uiuc.hack4impact.org/">Hack4Impact UIUC</a> and <a href="https://secsatuiuc.web.illinois.edu/">Students for Environmental Concerns</a>.
     - title: <a href="https://github.com/MobilityNet/mobilitynet-analysis-scripts">Mobility Net</a>
       year: 2022
       description: Implemented a continuous mode-segmented trajectory <a href="https://github.com/kennykos/mobilitynet-analysis-scripts/blob/pr_staging/classification_analysis.ipynb" target="_blank">evaluation framework</a> to evaluate the NREL OpenPATH pipeline.
