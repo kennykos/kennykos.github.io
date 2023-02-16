@@ -15,6 +15,16 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 ---
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LQHVMSJM7W"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LQHVMSJM7W');
+</script>
+
 I am a senior majoring in Math and Computer Science at the University of Illinois Urbana-Champaign. After earning my undergraduate degree, I intend to continue my studies at the graduate level in numerical methods for Partial Differential Equations, particularly Integral Equation Solutions for fluid flow and wave problems. Outside of my classwork, I am the president of [Students for Environmental Concerns](https://secsatuiuc.web.illinois.edu/), a project based environmental advocacy student organization. I enjoy making bagels from scratch, playing 16'' softball, and reading (especially novels by Gabriel Garcia Marquez).
 
 I recently co-authored two articles currently in the peer review process: 
