@@ -11,13 +11,13 @@
 - title: Education
   type: time_table
   contents:
-    - title: Mathematics and Computer Science BSLAS
+    - title: Mathematics and Computer Science BSLAS; Highest Distinction
       institution: University of Illinois at Urbana-Champaign
       year: 2023
       description:
         - "<u>Minor</u>: Computational Science and Engineering"
-        - "<u>GPA</u>: 3.87"
-        - "<u>Dean’s List</u>: Fall 2019, Spring 2020, Fall 2020, Fall 2022"
+        - "<u>GPA</u>: 3.88"
+        - "<u>Dean’s List</u>: Fall 2019, Spring 2020, Fall 2020, Fall 2022, Spring 2023"
 
 - title: Experience
   type: time_table
@@ -89,10 +89,10 @@
 - title: Open Source Projects
   type: time_table
   contents:
-    - title: <a href="https://github.com/toriis-portal">TORIIS</a>
+    - title: <a href="https://toriis.earth">TORIIS</a>
       year: 2023
       description: Building the Transparent and Open Resource for Institutional Investments in collaboration with <a href="https://uiuc.hack4impact.org/">Hack4Impact UIUC</a> and <a href="https://secsatuiuc.web.illinois.edu/">Students for Environmental Concerns</a>.
-    - title: <a href="https://github.com/MobilityNet/mobilitynet-analysis-scripts">Mobility Net</a>
+    - title: <a href="https://www.nrel.gov/transportation/openpath.html">NREL OpenPATH</a>
       year: 2022
       description: Implemented a continuous mode-segmented trajectory <a href="https://github.com/kennykos/mobilitynet-analysis-scripts/blob/pr_staging/classification_analysis.ipynb" target="_blank">evaluation framework</a> to evaluate the NREL OpenPATH pipeline.
 
