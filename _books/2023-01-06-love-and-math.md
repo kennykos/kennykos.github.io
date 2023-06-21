@@ -1,5 +1,4 @@
 ---
-
 published: true
 
 layout: review
@@ -10,8 +9,6 @@ isbn: # if no olid (dashes are optional)
 title: "Love and Math"
 author: Edward Frenkel
 year: 2014
-status: Queued 
-
+status: Reading
 ---
-
-I look forward to continuing my foray into mathematical literature with this book; recommended to me by Grant and currently being read by Dillon. 
+I look forward to continuing my foray into mathematical literature with this book; recommended to me by Grant and currently being read by Dillon.

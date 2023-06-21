@@ -1,6 +1,5 @@
 ---
-
-published: true
+published: false
 
 layout: review
 date: 2023-01-6 0:0:1 +0700
@@ -10,8 +9,6 @@ isbn: # if no olid (dashes are optional)
 title: "The History of the Calculus and Its Conceptual Development"
 author: Carl B. Boyer
 year: 2018
-status: Reading 
-
+status: Reading
 ---
-
 Recommended to me by Dr. Zoi Rapti, this book will officially end my streak of ?? female authored books.
