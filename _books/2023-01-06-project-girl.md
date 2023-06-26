@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 
 layout: review
 date: 2023-01-6 0:0:0 +0700
@@ -23,6 +23,7 @@ Janet's depiction of her undergraduate joinery provide a much needed spell to th
 
 I have though a lot about what drives the academic passions of *myself and my peers*. These investigations seem to always revolve around the profession of our parents, and the activated they placed us in as children. Yet Janet's academic experience is something I have never pondered. I have never before investigated what may drive a person's academic passions when they have to role academic role model, no guiding star.
 
-"We all seek a sense of belonging, a feeling of connection to something, yet each of us wants also to be special. Not an easy feat (229)"
+
+As I reflect on *Project Girl*, I am haunted by the maxim of unity Janet leaves in her epilouge: "We all seek a sense of belonging, a feeling of connection to something, yet each of us wants also to be special. Not an easy feat (229)"
 
 <!-- > Risa made the point that Americans are apolitical because we have no stable working class ... She said in Britain the workers have no illusions that someday they will become managers, "metaphorically win Lotto," whereas in the U.S. we are all taught the "Big Lie" -- that each of us has the full opportunity to be anything and have everything, when, in fact, that is only true for actual or honorary members of the oligarchy. I don't know. I like the U.S., but we have a long way to go (169). -->
