@@ -1,0 +1,298 @@
+\documentclass[12pt]{amsart}
+
+\usepackage[top=100pt,bottom=60pt,left=96pt,right=92pt]{geometry}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% packages
+
+\usepackage{hyperref}
+\usepackage{amsmath,amsthm,amssymb,amsfonts,enumerate,xcolor,layout,tikz,enumitem,fullpage, verbatim, graphicx, subcaption}
+
+% drawing packages
+\usetikzlibrary{decorations.pathreplacing}
+
+% algorithm packages
+\usepackage{algorithm}
+\usepackage{algorithmic}
+% \usepackage[noend]{algpseudocode}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% environments
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{example}[theorem]{Example}
+
+\theoremstyle{plain}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{question}[theorem]{Question}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{psmallmatrix}
+  {\left(\begin{smallmatrix}}
+  {\end{smallmatrix}\right)}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% hyperlink setup
+
+\definecolor{linkblue}{rgb}{0,0,.6}
+\definecolor{citered}{rgb}{.7,0,0}
+\hypersetup{colorlinks =true, linkcolor=linkblue, citecolor = citered, urlcolor=linkblue}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% other commands
+\def\id{{\mathbf e}}
+\def\C{{\mathbb C}}
+\def\N{{\mathbb N}}
+\def\P{{\mathbb P}}
+\def\R{{\mathbb R}}
+\def\CP{\C\P}
+\def\T{{\mathbb T}}
+\def\Q{{\mathbb Q}}
+\def\Z{{\mathbb Z}}
+\def\tAND{{\text{ and }}}
+\def\tOR{{\text{ or }}}
+\def\ST{{\text{ such that }}}
+
+\def\ft{{\mathfrak{t}}}
+
+\def\SL{\mathrm{SL}_2(\Z)}
+
+\def\h{\bar{h}} %definition of the h compliment variable
+
+\newcommand{\De}{\Delta}
+\newcommand{\om}{\omega}
+
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+
+\newcommand\Tinv{\text{T}^{-1}}
+\newcommand\vv{\begin{psmallmatrix}
+v_1 \\ v_2
+\end{psmallmatrix}}
+\newcommand\ww{\begin{psmallmatrix}
+w_1 \\ w_2
+\end{psmallmatrix}}
+\newcommand\uu{\begin{psmallmatrix}
+u_1 \\ u_2
+\end{psmallmatrix}}
+\newcommand\zz{\begin{psmallmatrix}
+z_1 \\ z_2
+\end{psmallmatrix}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{Math 417 Writing Assignment}
+\author{Gabriel Kosmacher}
+\date{Fall 2022}
+
+\begin{document}
+\maketitle
+
+Humans are often compelled to understand the underlying algebraic objects that govern our interactions with the world. Starting at a young age, we harness notions of arithmetic and symmetry to describe what we observe in nature, allowing us to quantify how we operate with objects and interpret patterns in physical phenomena. A mathematician seeks to understand these algebraic objects on an \emph{abstract} level, hoping to organize mathematical knowledge so that efficient arguments can be made to describe a myriad of diverse objects that share core relations.
+
+\section{Groups and Subgroups}
+
+A quintessential object of mathematical intrigue is that of a \emph{group}: a set of objects $G$ with a rule for composing two elements of $G$ such that \emph{(1)} the composition is \emph{associative}; \emph{(2)} the set $G$ has an \emph{identity element} that, when composed with any element of $a$ of $G$, yields the element $a$; and \emph{(3)} for any element $a$ of $G$, there exists an \emph{inverse element} $a^{-1}$ such that the composition of $a$ and its inverse yields the identity element.
+
+Examples of mathematical groups include: The set of integers $\Z = \{0, \pm 1, \pm 2, \dots \}$ together with the $+$ addition operation, the set of symmetries of a geometric figure together with composition of symmetries, and the set of permutations of a finite set together with compositions of permutations.
+
+\begin{definition}
+A \emph{group} is a set $G$ equipped with a \emph{group operation} $*: G \times G \to G$ such that 
+\begin{itemize}
+    \item For all $a,b,c \in G$, $(a * b) * c = a * (b * c)$. We call this the associative property $*$.
+    \item There exists an element $\id \in G$ such that for all $g \in G$, $g*\id = \id*g = g$. We say $\id$ is the identity element of $G$.
+    \item Given an identity element $\id \in G$, for all $g \in G$ there is an element $g^{-1} \in G$ such that $g*g^{-1} = g^{-1}*g = \id$. We say that $g^{-1}$ is the inverse element of $g$. 
+\end{itemize}
+We denote the group of $G$ equipped with the operation $*$ as $\left( G, *\right)$.
+\end{definition}
+
+It is common shorthand to denote a group $\left( G, * \right)$ as $G$ and to denote the product of a group operation $a * b$ as $ab$ for some $a,b \in G$. We adopt this shorthand throughout the remainder of this paper.
+
+The following proposition gives us \emph{uniqueness} of the identity element and inverse elements for a group and is proved in \cite{goodman2014algebra} Propositions 2.1.1 and 2.1.2.
+
+\begin{proposition}
+For any group $G$, we have
+\begin{enumerate}
+    \item The identity element $\id \in G$ is unique. That is, for any two elements $\id$ and $\id'$ in $G$, for all $g \in G$, if $g\id = \id g = g = \id'g = g \id'$ then $\id = \id'$; and
+    \item any element $g \in G$ has a unique inverse element $g^{-1} \in G$. That is, for any $g,g^{-1},h \in G$, if $hg = gh = \id = g^{-1}g = gg^{-1}$ then $h=g^{-1}$.
+\end{enumerate}
+\end{proposition}
+
+A common property that many groups share is that of commutativity; that the result of applying the group operation on any two elements is independent of the order in which the elements are written. A classic group with the commutative property is the integers equipped with addition $(\Z, +)$, as for any integers $a$ and $b$ we have $a+b=b+a$. Another important group with the commutative property is the the additive group of integers modulo $n$, $(\Z_n, +)$.  $(Z_n, +)$, also called the \emph{cyclic group} of $n$ elements, is comprised of \emph{congruence classes}, denoted $[k]_n$, where $0 \leq k \leq n - 1$, and where each congruence class $[k]_n$ contains all the integers $a$ such that $n$ divides the difference of $a$ and $k$. It is common to think of congruence classes as containing any number that \emph{wraps around} $n$ to get back to $k$. To get a concrete visualization, picture the group $(Z_{12},+)$ as a wall clock, and let the congruence class $[3]_{12}$ contain not only \texttt{3:00}, but also \texttt{15:00}. Addition in this group is given by the structure $[a]_n + [b]_n = [a+b]_n$. Again, using the wall clock analogy, we know that \texttt{4} hours after \texttt{9}, our clock will point to \texttt{3}, just as $[4]_n + [9]_n = [4+9]_n = [3]_n$. Similarly, we now that \texttt{9} hours after \texttt{4}, our clock will again point to \texttt{3}, as $[9]_n+[4]_n = [9+4]_n = [3]_n$. We can extrapolate this example to see that addition of congruence classes is, in fact, commutative. We call groups with the commutative property \emph{abelian groups}.
+
+Yet not all groups are commutative. Take, for instance, the group of permutations $S_n$ of size $n\geq 3$. We have that $(12)$ and $(23)$ are in $S_n$, but $(12)(23) \neq (23)(12)$.
+
+\begin{definition}
+    We say a group $G$ is \emph{abelian}, or \emph{commutative}, if for all $g,h \in G$, we have $gh = hg$. It is common to denote the group operation as $+$ for abelian groups. 
+\end{definition}
+
+Once a group is found, one may find it interesting to study certain instances of the group that maintain the group property. If one has the general linear group $\mathrm{GL}(n, \R)$ of real $n \times n$ invertible matrices, they might take interest in studying only those particular matrices with determinant $\pm 1$, $\mathrm{O}(n, \R)$, called the real orthogonal matrices of size $n$. For instance, they may ask if $\mathrm{O}(n, \R)$ is itself a group with the same operation of the General Linear group. 
+
+\begin{definition}
+    Given a group $G$, we say that the subset $H$ of $G$ forms a subgroup of $G$ if $H$, equipped with the operation $*$, is itself a group. We denote a subgroup $H$ of $G$ by $H \leq G$.
+\end{definition}
+
+It can be tedious to check if a given set forms a subgroup via definition alone. However, the following propositions decreases the labor needed to showing that two special conditions are satisfied.
+
+\begin{proposition}\label{prop:sub}
+    For any nonempty subset $H$ of $G$, then $H$ is a subgroup of $G$ if, and only if, 
+    \begin{enumerate}
+        \item for all $a,b \in H$, $a b \in H$; and,
+        \item for all $h \in H$,  $h^{-1} \in G$ is an element of $H$ such that $hh^{-1} = \id$.
+    \end{enumerate} 
+\end{proposition}
+
+\begin{proof}
+    Let $H$ be a subgroup of $G$. Then \emph{(1)} and \emph{(2)} hold by definition.
+
+    Now consider that for all $a,b \in H$, $a b \in H$ and for all $h \in H$, there is an inverse element $h^{-1} \in H$ such that $hh^{-1} = \id$. But by \emph{(1)} we have that $H$ has an operation, and we know that operation is associative as $G$ is a group. Since $H$ is nonempty, there contain an element $h$. But then by \emph{(2)} we have $h^{-1} \in H$ and by \emph{(1)} we have $hh^{-1} = \id \in H$. Thus, $H$ is a subgroup of $G$.
+\end{proof}
+
+It is common to refer to condition \emph{(1)} of Proposition~\ref{prop:sub} as \emph{closure under group product} and to refer to condition \emph{(2)} of Proposition~\ref{prop:sub} as \emph{closure under group inverse}.
+
+% Once a good amount of groups are discovered, it can be useful to study \emph{relationships} between groups. One particular relationship of interest is a structure preserving relationship called a \emph{homomorphism}. For instance,t
+
+% \begin{definition}
+%     Given two groups $G$ and $H$, we say that the map $\phi: G \to H$ is a \emph{homomorphism} from $G$ to $H$ if for all $a,b \in G$, we have
+%     \[\phi(ab) = \phi(a) \phi(b)\]
+% \end{definition}
+
+
+
+% \begin{definition}
+%     Given any two groups $G$ and $H$, we say that bijective the map $\varphi: G \to H$ is an \emph{isomorphism} is for all $a,b \in G$, we have 
+%     \[\varphi(ab) = \varphi(a)\varphi(b)\]
+%     In other words, we say that a homomorphism is an isomorphism if, and only if, it is bijective. 
+%     We say that two groups $G$ and $H$ are \emph{isomorphic} if there is an isomorphism from $G$ to $H$. We denote the existence of an isomorphism between groups $G$ and $H$ by the notation $G \cong H$.
+% \end{definition}
+
+\section{Center of a Group}
+
+An important concept in the theory of groups is the \emph{center of a group}; the set of elements of a group $G$ that commute with every element of $G$.
+
+\begin{definition}
+    For any group $G$, the \emph{center} $Z(G)$ is the set of elements that commute with every element of $G$,
+    \[
+        Z(G) = \{ z \in G~|~gz = zg \text{ for all } g \in G \}
+    \]
+\end{definition}
+
+\begin{proposition}
+    For any group $G$, the center $Z(G)$ is an abelian subgroup of $G$.
+\end{proposition}
+
+\begin{proof}
+    We first need to show that $Z(G)$ is a subgroup of $G$. By Proposition~\ref{prop:sub}, it is sufficient to show that $Z(G)$ is closed under group multiplication and group inverse. We have that the identity element $e$ is in $Z(G)$ as $ex = x = xe$ for any $x \in G$, so $Z(G)$ is non empty. 
+    
+    Pick some $x,y \in Z(G)$. Then for any $g \in G$, by associativity of the group operation, and recalling that $yg$ and $gx$ are elements of $G$ by definition of the group operation,
+    \[
+        (xy)g = x(yg) = (yg)x = y(gx) = (gx)y = g(xy)
+    \]
+    and thus $xy \in G$ and $Z(G)$ is closed under group multiplication. 
+    
+    Now consider any $x \in Z(G)$ with inverse $x^{-1} \in G$. Then for any $g \in G$, recalling that  $x^{-1}gx^{-1} \in G$ by definition of the group operation,  we have
+    \[
+    x(x^{-1}gx^{-1}) = (x^{-1}gx^{-1})x \iff (xx^{-1})gx^{-1} = x^{-1}g(xx^{-1}) \iff gx^{-1} = x^{-1}g
+    \]
+    and thus $Z(G)$ is closed under group inverse.
+
+    It is easy to see that $Z(G)$ is abelian, as for any $x \in Z(G)$, by construction we have that for all $y \in G$, $xy = yx$. In other words, for any $x,y \in Z(G)$, $xy = yx$, so $Z(G)$ is abelian. 
+\end{proof}
+
+The group of symmetries of a regular $n$ sided polygon, called the Dihedral group and denoted $D_n$, is among the most studied finite groups. It is composed of $n$ rations of $2\pi/n$ about the origin and $2$ flips about. The group multiplication is given by the properties that $n$ rotations $r$ or $2$ flips $j$ both equal the identity, and a rotation $r$ followed by a flip $j$ is equal to the flip $j$ followed by the inverse rotation $r^{-1}$. Furthermore, we have that any number of rotations followed by a flip is its own inverse, as given in the following lemma.
+
+\begin{lemma}\label{lem}
+For any Dihedral group $D_n$, for all integers $n$, we have $(r^nj)^2=e$, where $r^n, j \in D_n$.
+\end{lemma}
+\begin{proof}
+We prove by mathematical induction. Let $n=0$. Then $(r^0j)^2=j^2=\id$. Now assume that for all $k$ less than an arbitrary integer $n$ and greater than $0$ that $(r^kj)^2=\id$ and consider
+\begin{align*}
+    (r^nj)^2 &= r r^{n-1}j r^{n-1} rj \\
+    &= r r^{n-1} j r^{n-1} jj^{-1} rj \\
+    &= r (r^{n-1} j r^{n-1}j)j^{-1} rj \\
+    &= rj^{-1} rj  \\
+    &= rj^{-1}jr^{-1} \\
+    &= rr^{-1} \\
+    &=\id
+\end{align*}
+\end{proof}
+
+Investigating the group $D_4$, the symmetries of the square, we can deduce that the center $Z(D_4)$ is the subgroup $\{\id, r^2\}$.
+\begin{proof}
+    It is easy to see that $\id$ is in the center, as $\id g = g \id = g$ for any $g \in D_4$. Now consider a rotation of the form $r^n$ where $1 \leq n \leq 3$. We have that rotation multiplication commutes, so we only need to consider multiplying $r^n$ by elements of the form $r^mj$, where $0 \leq m \leq 3$. We simplify this to checking whether elements of the form $r^mj$ are self inverses, as if they are $r^nr^mj = (r^mj)^{-1}r^n = r^mjr^n $. But we also have that every element of the form $r^mj$ is a self inverse by Lemma~\ref{lem}, so we only need to check when $r^{n}$ is a self inverse, which happens when $n = 2$, and thus $r^2 $ is in the center. Finally, we have that no element of the form  $r^mj$ is in the center, where $0 \leq m \leq 3$, as $rr^mj = r^{m+1}j = j r^{-m}r^{-1} = r^{m}jr^{-1} \neq r^mjr$. Thus, we have that $Z(D_4) = \{ \id, r^2 \}$.
+\end{proof}
+
+Another important concept is the \emph{centralizer of an element} $x$ in group $G$; a set of elements of $G$ that commute with the element $x$.
+
+\begin{definition}
+    For any nonempty group $G$ and any element $x\in G$, we define the \emph{centralizer} $C(x)$ of $x$ to be
+    \[
+    C(x) = \{ g \in G~|~ gx =xg\}
+    \]
+\end{definition}
+
+\begin{proposition}
+    For any nonempty group $G$, the centralizer $C(x)$ for any element $x\in G$ is a subgroup of $G$.
+\end{proposition}
+
+\begin{proof}
+    The element $x$ of $G$ is an element of $C(x)$, so $C(x)$ is nonempty. 
+    
+    Pick some $g,h$ in $C(x)$. Then, using the substitutions $hx = xh$ and $gx = xg$, we have
+    \[
+        (gh)x = g(hx) = g(xh) = (gx)h = (xg)h = x(gh)
+    \]
+    and thus $gh \in C(x)$, so $C(x)$ is closed under group multiplication.
+
+    First, notice that $x^{-1} \in C(x)$ as $x^{-1} \in G$ and $x^{-1}x = e = xx{-1}$. Now consider any $g \in C(x)$ with inverse $g^{-1} \in G$. Then, using the substitution $gx = xg$, we have
+    \[
+        x^{-1}g = x^{-1}g(xx^{-1}) = x^{-1}(gx)x^{-1} = x^{-1}(xg)x^{-1} = (x^{-1}x)gx^{-1} = gx^{-1}
+    \]
+    and thus $x^{-1} \in C(x)$, so $C(x)$ is closed under group inverse.
+\end{proof}
+
+We can compute the centralizers of every element of $D_4$ to be
+\begin{align*}
+   C(\id) &= C(r^2) = D_4\\
+   \quad C(r) &= C(r^3) = \{\id, r, r^2, r^3 \}\\
+   \quad C(j)  &= C(r^2j)= \{\id, r^2, j, r^2j\}, \\
+   \quad C(rj)  &= C(r^3j)= \{\id, r^2, rj, r^3j\} 
+\end{align*}
+
+where $0 \leq n \leq 3$.
+\begin{proof}
+    We have that $\id$ and $r^2$ are in the center of $D_4$, and it is clear to see that the centralizer of any element in the center is the whole group $D_4$. 
+    As disused when computing the center of $D_4$, each rotation commutes, but $r$ and $r^3$ do not commute with elements in the form $r^mj$, where $0 \leq m \leq 3$, so the centralizers of $r$ and $r^3$ are $\{\id, r, r^2, r^3 \}$. 
+    Finlay, the centralizer of any element in the form $C(r^nj)$, where $0 \leq n \leq 3$, must contain $\id$ and $r^2$ as they are in the center of $D_4$, but the centralizer does not contain any other rotations; a direct result of our proof of the center of $D_4$. Furthermore, we have that each element commutes with itself, and it can be checked that $j$ commutes with $r^2j$ but not with $rj$ or $r^3j$, and that $rj$ commutes with $r^3j$ but not with $j$ or $r^j$. Thus, the centralizers $C(j)$ and $C(r^2j)$ must be $\{\id, r^2, j, r^2j\}$, while the centralizers $C(rj)$ and $C(r^3j)$ must be $\{\id, r^2, rj, r^3j\}$.
+\end{proof}
+
+\begin{theorem}
+Let $G$ be a group. Then the center $Z(G)$ is equal to the intersection of all centralizers $C(x)$ of $G$. In other words,
+\[
+Z(G) = \bigcap_{x \in G} C(x)
+\]
+\end{theorem}
+
+\begin{proof}
+    We first show that $Z(G)$ is contained in $\cap_{x \in G} C(x)$. Suppose that $z \in Z(G)$. Then it follows that for all $x \in G$, $xz = za$. But by the definition of the centralizer, this is equivalent to saying that for all $x \in G$, $z \in C(x)$. Thus, $Z(G) \subseteq \cap_{x \in G} C(x)$.
+
+    We now show that $\cap_{x \in G} C(x)$ is contained in $Z(G)$. Let $c \in \cap_{x \in G} C(x)$. Then by the definition of the intersection, for all $x \in G$ we have $c \in C(x)$. That is, by the definition of the centralizer, for all $x \in G$ we have $cx = xc$. But by the definition of the center, $c \in Z(G)$. Thus, $ \cap_{x \in G} C(x) \subseteq Z(G)$ 
+\end{proof}
+
+\bibliographystyle{alpha}
+\bibliography{ref}  
+
+\end{document}

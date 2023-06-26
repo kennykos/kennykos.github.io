@@ -1,5 +1,4 @@
 ---
-
 published: true
 
 layout: review
@@ -10,8 +9,6 @@ isbn: # if no olid (dashes are optional)
 title: "Yellow Earth"
 author: John Sayles
 year: 2018
-status: Queued 
-
+status: Reading
 ---
-
 I'm looking forward to reading one of my Dad's favorite books, and it's about shale none the less!
