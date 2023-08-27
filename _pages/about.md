@@ -26,8 +26,7 @@ social: false  # includes social icons at the bottom of the page
   gtag('config', 'G-LQHVMSJM7W');
 </script>
 
-
-I am a first-year graduate student and CSEM fellow studying Computational Science, Engineering, and Mathematics at the University of Texas at Austin. My main academic interests lie in the field of numerical methods for Partial Differential Equations, particularly Integral Equation Solutions for fluid flow and wave problems. Outside of PDEs, I am interested in Algebra and the Philosophy and History of Mathematics, though I do not intend to pursue research in these topics.
+I am a CSEM fellow studying Computational Science, Engineering, and Mathematics at the University of Texas at Austin. My main academic interests lie in the field of numerical methods for Partial Differential Equations, particularly Integral Equation Solutions for fluid flow and wave problems. Outside of PDEs, I am interested in Algebra and the Philosophy and History of Mathematics, though I do not intend to pursue research in these topics.
 
 I completed my undergrad at University of Illinois Urbana-Champaign where I majored in Math and Computer Science. During my time at UIUC, I was heavily involved with [Students for Environmental Concerns](https://secsatuiuc.web.illinois.edu/), a project based environmental advocacy student organization.
 

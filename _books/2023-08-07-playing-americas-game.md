@@ -9,6 +9,6 @@ isbn: # if no olid (dashes are optional)
 title: "Playing America's Game: Baseball, Latinos, and the Color Line"
 author: Adrian Burgos Jr.
 year: 2007
-status: Queued
+status: Reading
 ---
 I found this book on a walk back from Urbana with Koshal and Faith.
