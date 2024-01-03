@@ -9,6 +9,6 @@ isbn: # if no olid (dashes are optional)
 title: "White Teeth"
 author: Hannah Arendt
 year: 1965
-status: Queued
+status: reading
 ---
 Time for some political theory. 
