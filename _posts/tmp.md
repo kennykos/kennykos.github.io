@@ -1,0 +1,31 @@
+---
+layout: post
+
+title:  My Summer of Rest and Relaxation
+
+date:   2015-03-15 16:40:16
+
+description: an attempt to balance out my library
+
+tags: books
+
+categories: sample-posts
+---
+July 2022 - Dec 2022
+
+## Book List
+
+- Braiding Sweetgrass, Robin Wall Kimmer
+- My Year of Rest and Relaxation, Ottessa Moshfegh
+- Saving Us, Katharine Hayhoe
+- Of Women and Salt, Gabriella Garcia
+- Milkman, Anna Burns
+- Translating Myself and Others, Jhumpa Lahir
+- Sentence, Louise Edrich
+- The Color Purple, Alice Walker
+- Woman on the Edge of Time, Marge Piercy
+- Intuition, Allegra Goodman
+- The Beet Queen, Louise Edrich
+- [He, She and It, Marge Piercy](https://kennykos.github.io/books/he-she-and-it/)
+- [The Lying Life of Adults, Elena Ferrante](https://kennykos.github.io/books/the-lying-life-of-adults/)
+- [Project Girl, Janet McDonald](https://kennykos.github.io/books/project-girl/)
