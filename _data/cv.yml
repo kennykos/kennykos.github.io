@@ -1,12 +1,12 @@
-- title: General Information
-  type: map
-  contents:
-    - name: Full Name
-      value: Gabriel Kosmacher
-    - name: Date of Birth
-      value: 29th January 2001
-    - name: Languages
-      value: English
+# - title: General Information
+#   type: map
+#   contents:
+#     - name: Full Name
+#       value: Gabriel Kosmacher
+#     - name: Date of Birth
+#       value: 29th January 2001
+#     - name: Languages
+#       value: English
 
 - title: Education
   type: time_table
@@ -14,10 +14,6 @@
     - title: Mathematics and Computer Science BSLAS; Highest Distinction
       institution: University of Illinois at Urbana-Champaign
       year: 2023
-      description:
-        - "<u>Minor</u>: Computational Science and Engineering"
-        - "<u>GPA</u>: 3.88"
-        - "<u>Dean’s List</u>: Fall 2019, Spring 2020, Fall 2020, Fall 2022, Spring 2023"
 
 - title: Experience
   type: time_table
