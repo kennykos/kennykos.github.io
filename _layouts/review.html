@@ -2,8 +2,10 @@
 layout: default
 ---
 {% include base_path %}
-   {% if page.author %}
-    <h1> Thoughts on reading <i>{{page.title}}</i> by {{ page.author}}. </h1>
+   {% if page.author and page.translator %}
+    <h1> Thoughts on reading <i>{{page.title}}</i> by {{ page.author }} as translated by {{ page.translator }}. </h1>
+  {% elsif page.author %}
+    <h1> Thoughts on reading <i>{{page.title}}</i> by {{ page.author }}. </h1>
    {% elsif page.editor %}
     <h1> Thoughts on reading <i>{{page.title}}</i>  edited by {{ page.editor}}. </h1>
    {% endif %}
