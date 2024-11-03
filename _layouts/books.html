@@ -2,11 +2,13 @@
 layout: default
 ---
 
-{{ content }}
+
 
 {% assign books=site.books %}
 
 <h2>{{page.list_title | default: "Books" }}</h2>
+
+{{ content }}
 
 {% if books.size > 0 %}
 
@@ -14,71 +16,35 @@ layout: default
       {% assign currentdate = book.date | date: "%Y" %}
       {% if currentdate != date %}
       {% unless forloop.first %}</ul>{% endunless %}
-       <h1 id="y{{book.date | date: "%Y"}}">{{ currentdate }}</h1>
+       <h1 id="y{{book.date | date: "%Y"}}">Reviewed in {{ currentdate }}</h1>
 
      <ul>
      {% assign date = currentdate %}
      {% endif %}
 
-        <figure class="book-cover">
-
-        <a href="{{ book.url | relative_url }}">
-
-        {% if book.cover %}
-
-        <img alt="{{ book.title }} cover" src="{{ site.baseurl }}/assets/covers/{{ book.cover }}" style="height:200px" />
-
-        {% elsif book.olid %}
-
-        <img alt="{{ book.title }} cover" src="http://covers.openlibrary.org/b/olid/{{ book.olid }}-L.jpg?default=false" style="height:200px" />
-
-        {% elsif book.isbn %}
-
-        <img alt="{{ book.title }} cover" src="http://covers.openlibrary.org/b/isbn/{{ book.isbn }}-L.jpg?default=false" style="height:200px" />
-
-        {% endif %}
-
-        {% if book.status %}
-          {% assign status = book.status | upcase | strip %}
-
-          {% if status  == "READING" %}
-
-            <figcaption class="reading">{{ status }}</figcaption>
-
-          {% elsif status  == "FINISHED" %}
-
-             <figcaption class = "finished">{{ status }}</figcaption>
-
-          {% elsif status  == "QUEUED" %}
-
-             <figcaption class = "queued">{{ status }}</figcaption>
-
-          {% elsif status  == "ABANDONED" %}
-
-            <figcaption class="abandoned">{{ status }}</figcaption>
-
-            {% elsif status  == "INTERESTED" %}
-
-              <figcaption class="interested">{{ status }}</figcaption>
-
-
-            {% else %}
-
-            <figcaption class="uncategorized"> UNCATEGORIZED </figcaption>
-
-
-        {% endif %}
-            {% else %}
-
-            <figcaption class="uncategorized"> UNCATEGORIZED </figcaption>
-
-      {% endif %}
-        </a>
-        </figure>
-
+    {% if book.status == "Finished" %}
+    <li>
+      <a href="{{ book.url | relative_url }}">
+      <strong>{{ book.title }},</strong> <em>{{ book.author | default: book.editor }}</em>
+      </a>
+    </li>
+    {% endif %}
 
   {% if forloop.last %}</ul>{% endif %}
 {% endfor %}
+
+<h1>Reviews on Deck</h1>
+<ul>
+  {% for book in books %}
+    {% if book.status == "Queued" %}
+      <li>
+        <a href="{{ book.url | relative_url }}">
+          <strong>{{ book.title }},</strong> <em>{{ book.author | default: book.editor }}</em>
+        </a>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
 
 
 {% endif %}
