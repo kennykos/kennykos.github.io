@@ -1,10 +1,11 @@
 ---
 layout: post
-title:  reading female authors
+title:  Pykokkos
 date:   2015-03-15 16:40:16
-description: an attempt to balance out my library
-tags: books
-categories: sample-posts
+description: march & april, looking forward to summer
+tags: hpc
+categories: draft
+giscus_comments: true
 ---
 
 July 2022 - Dec 2022
