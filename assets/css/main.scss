@@ -3,13 +3,14 @@
 ---
 @charset "utf-8";
 
-// Dimensions
-$max-content-width: {{ site.max_width }};
+// Import files with @use
+@use "variables";
+@use "themes";
+@use "layout";
+@use "base";
+@use "distill";
 
-@import
-  "variables",
-  "themes",
-  "layout",
-  "base",
-  "distill"
-;
+// Define CSS custom property with Jekyll variable
+:root {
+  --max-content-width: {{ site.max_width }};
+}
