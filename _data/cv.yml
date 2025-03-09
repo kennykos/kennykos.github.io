@@ -1,24 +1,41 @@
-# - title: General Information
-#   type: map
-#   contents:
-#     - name: Full Name
-#       value: Gabriel Kosmacher
-#     - name: Date of Birth
-#       value: 29th January 2001
-#     - name: Languages
-#       value: English
+- title: General Information
+  type: map
+  contents:
+    - name: Full Name
+      value: Gabriel Kosmacher
+    - website: 
+      value: <a href="https://kennykos.github.io">kennykos.github.io</a>
+    - location: 
+      value: Austin, Texas
+    - email:
+      value: gkosmacher[at]utexas[dot]edu
 
 - title: Education
   type: time_table
   contents:
+    - title: Computational Science, Engineering, and Mathematics PhD
+      institution: University of Texas at Austin
+      advisor: Dr. George Biros
+      year: 2023-
     - title: Mathematics and Computer Science BSLAS; Highest Distinction
       institution: University of Illinois at Urbana-Champaign
-      year: 2023
+      year: 2019-2023
 
-- title: Experience
+- title: Research Experience
   type: time_table
   contents:
-    - title: Department of Energy Science Undergraduate Laboratory Intern
+    - title: Graduate Research Assistant
+      institution: University of Texas at Austin
+      advisor: Dr. George Biros
+      year: 2023-
+      description:
+        - title: <b>Performance Portable Spectral Ewald Method for Stokes Flow</b>
+          contents:
+            - Developed in PyKokkos for implementations on devices with shared memory and streaming parallelism (GPUs, APUs, etc.)
+            - Performance profiling with <b>Tau</b> <b>NSIGHT Compute</b> suite of tools for runs using NVIDIA’s A100 GPUs on the TACC Lonestar 6 supercomputer. These results are compared with cache aware pen-and-paper performance modeling.
+            - Invited to AMD tools workshop at the University of Oregon port the algorithm onto ROCM architecture and tune for performance on AMD Instinct™ series MI300A devices.
+
+    - title: Undergraduate Research - Department of Energy Science Undergraduate Laboratory Intern
       institution: National Renewable Energy Laboratory
       advisor: Dr. K. Shankari
       year: 2022
@@ -39,7 +56,7 @@
         - <b>Co-designed and Co-developed a dynamical model</b> with another undergraduate student and Professor Rapti to investigate Daphnia dentifera disease dynamics.
         - <b>Presented results</b> at the University of Illinois Chicago Undergraduate Mathematics Symposium 2022 and the University of Illinois Urbana-Campaign Undergraduate Research Symposium 2022.
 
-    - title: Illinois Geometry Lab
+    - title: Undergraduate Research - Illinois Geometry Lab
       institution: University of Illinois Urbana-Champaign
       advisor: Dr. Joseph Palmer
       year: 2021-2022
@@ -91,9 +108,6 @@
     - title: <a href="https://www.nrel.gov/transportation/openpath.html">NREL OpenPATH</a>
       year: 2022
       description: Implemented a continuous mode-segmented trajectory <a href="https://github.com/kennykos/mobilitynet-analysis-scripts/blob/pr_staging/classification_analysis.ipynb" target="_blank">evaluation framework</a> to evaluate the NREL OpenPATH pipeline.
-
-
-
 
 - title: Honors and Awards
   type: time_table
