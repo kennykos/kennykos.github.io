@@ -1,3 +1,4 @@
+[![deploy](https://github.com/kennykos/kennykos.github.io/actions/workflows/deploy.yml/badge.svg)](https://github.com/kennykos/kennykos.github.io/actions/workflows/deploy.yml)
 # kennykos.github.io
 
 This is a fork from [al-folio](https://github.com/alshedivat/al-folio).
