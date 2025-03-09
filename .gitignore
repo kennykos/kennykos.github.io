@@ -11,3 +11,4 @@ Gemfile.lock
 vendor
 assets/atms502
 assets/cs555
+.vscode/
