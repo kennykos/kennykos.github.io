@@ -1,20 +1,19 @@
 ---
 layout: page
-permalink: /publications/
-title: Publications
+permalink: /presentations/
+title: Presentations
 description: An up-to-date list is available on <a href="https://scholar.google.com/citations?user=Lmwd5akAAAAJ&hl=en" target="_blank">Google Scholar</a>.
-years: [2024, 2023]
+years: [2025]
 nav: true
-nav_order: 1
+nav_order: 2
 ---
-<!-- _pages/publications.md -->
 <div class="publications">
 
 
-<h1>Conference & Journal Articles</h1>
+<h1>Presentations</h1>
 {%- for y in page.years %}
   <h2 class="year">{{y}}</h2>
-  {% bibliography -f papers -q @*[year={{y}}]* %}
+  {% bibliography -f presentations -q @*[year={{y}}]* %}
 {% endfor %}
 
 </div>
