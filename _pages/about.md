@@ -33,4 +33,4 @@ My graduate work investigates methods that *quickly* and *accurately* approximat
 These methods are the applied to find solutions to *N-body* problems with algebraically decaying kernels in *linear* or *log-linear* time. 
 Such N-body problems are prevalent in mathematical physics -- e.g., electrostatics, molecular dynamics, potential theory.
 My group applies these methods to the Nyström discretization of the Stokes boundary integral equation for [blood capsule simulation](https://arxiv.org/abs/2310.13908), 
-and I specialize in designing and implementing performance portable algorithms (i.e., efficiently executable on CPUs and GPUs) for such applications.
+and I specialize in designing and implementing performance portable algorithms (i.e., efficiently executable on CPUs and GPUs from different vendors) for such applications.
