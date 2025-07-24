@@ -1,0 +1,272 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Graduate Curriculum Vitae
+% LaTeX Template
+% Version 1.1 (9/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Rensselaer Polytechnic Institute (http://www.rpi.edu/dept/arc/training/latex/resumes/)
+%
+% Important note:
+% This template requires the res.cls file to be in the same directory as the
+% .tex file. The res.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[resmargin, 10pt]{res} % Use the res.cls style, the font size can be changed to 11pt or 12pt here
+\usepackage[margin=0.5in]{geometry}
+%\documentclass[letterpaper,10pt]{article}
+\usepackage{helvet} % Default font is the helvetica postscript font
+%\usepackage{newcent} % To change the default font to the new century schoolbook postscript font uncomment this line and comment the one above
+\usepackage[pdftex]{hyperref,xcolor}
+\usepackage{bibentry} % for publications
+\definecolor{linkblue}{rgb}{0,0,.6}
+\definecolor{citered}{rgb}{.7,0,0}
+\hypersetup{colorlinks =true, linkcolor=linkblue, citecolor = citered, urlcolor=linkblue}
+
+
+%\usepackage[bottom=0.5in, top=0.8in]{geometry}
+\usepackage{fancyhdr}
+\setlength{\textwidth}{5.1in} % Text width of the document
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+%\addtolength{\oddsidemargin}{-0.55in}
+%\addtolength{\evensidemargin}{-0.55in}
+\addtolength{\textwidth}{1in}
+%\addtolength{\topmargin}{-0.55in}
+%\addtolength{\textheight}{1.0in}
+
+% Sections formatting
+\renewcommand\sectionfont{}%\bf\itshape
+
+\usepackage{enumitem}
+\usepackage[super]{nth}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	NAME AND ADDRESS SECTION
+%----------------------------------------------------------------------------------------
+\moveleft.5\hoffset\centerline{\large\bf Curriculum Vitae/Resume} % Your name at the top
+\moveleft.5\hoffset\centerline{\large\bf Gabriel Kosmacher } % Your name at the top
+% \moveleft.5\hoffset\centerline{\large\bf CSEM PhD Program} % Your name at the top
+\moveleft\hoffset\vbox{\hrule width 18.7cm height 0.5pt}\smallskip % Horizontal line
+\moveleft.5\hoffset\centerline{Austin, Texas, United States}
+\vspace{-23pt}
+\hspace*{-\sectionwidth}{\url{https://kennykos.github.io/}} \hfill +1 773-986-0852
+
+%----------------------------------------------------------------------------------------
+
+\begin{resume}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SERVICE SECTION
+%---------------------------------------------------------------------------------------- 
+
+\vspace{-20pt}
+
+\section{Education}
+
+{\bf University of Texas at Austin}, Austin, TX \hfill August 2023-Present \\
+\underline{Degree}: Computational Science, Engineering, and Mathematics PhD \\ %\hfill Graduation: May 2023 \\
+\underline{Concentration}: Computational and Applied Mathematics (CAM)\\
+\underline{Advisor}: George Biros \\ \\
+{\bf University of Illinois at Urbana-Champaign}, Champaign, IL \hfill August 2019-May 2023 \\
+\underline{Degree}: Mathematics and Computer Science BSLAS; Highest Distinction \\ %\hfill Graduation: May 2023 \\
+\underline{Minors}: Computational Science and Engineering \\
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS
+%----------------------------------------------------------------------------------------
+\vspace{-8pt}
+\section{Publications}
+
+\textbf{Evaluating the Interplay between Trajectory Segmentation and Mode Inference Error} \\
+\sl{\textbf{Gabriel Kosmacher}, K. Shankari}
+\\ Transportation Research Record (2023)
+ \\ Available at \href{https://journals.sagepub.com/doi/10.1177/03611981231208154}{https://journals.sagepub.com/doi/10.1177/03611981231208154}
+
+\textbf{Packing Densities of Delzant and Semitoric Polygons} \\
+\sl{Yu Du, \textbf{Gabriel Kosmacher}, Yichen Liu, Jeff Massman, Joseph Palmer, Timothy Thieme, Jerry Wu, Zheyu Zhang} \\
+SIGMA 19 (2023), 081, 42 pages \\ Available at \href{https://www.emis.de/journals/SIGMA/2023/081/}{https://www.emis.de/journals/SIGMA/2023/081/}
+
+
+%----------------------------------------------------------------------------------------
+%	PRESENTATIONS SECTION
+%----------------------------------------------------------------------------------------
+\vspace{-8pt}
+\section{Presentations} 
+
+{\sl A Primer on Boundary Integral Equation Methods for Elliptic PDEs} (CSEM Student Forum, 2024) \\
+{\sl I know I'm Right, But Does my Phone?} (TRB 2023, NREL SULI 2022)\\
+{\sl Seasonality and Immunity in Disease Dynamics.} (UIC UMS 2022, UIUC URS 2022) \\
+{\sl Toric and Semitoric Polygon Packing.} (IGL Spring 2022, Fall 2021, Spring 2021) 
+
+%----------------------------------------------------------------------------------------
+%	RESEARCH EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+\vspace{-8pt}
+\section{Research \\ Experience}
+
+{\bf University of Texas at Austin} \hfill August 2023-Present \\
+Dr. George Biros \\
+Working on a performance portable Spectral Ewald implementation for particle-in-cell Stokes flow.
+\begin{itemize}[itemsep=0em]
+    \item {\bf Developing a novel particle-to-grid algorithm} to be used in the {\emph particle2grid} stage of the Spectral Ewald method that utilizes {\bf data locality} and {\bf parallelism} to achieve {\bf near-peak performance} on modern machines.  
+    \begin{itemize}[itemsep=0em]
+        \item Algorithm development in {\bf PyKokkos}, a {\bf performance portable} python framework. The algorithm will be released as part of a planed {\bf open source} python package for the Spectral Ewald method. 
+        \item Performance profiling with the {\bf NSIGHT Compute} suite of tools for runs using NVIDIA's A100 GPUs on the TACC Lonestar 6 supercomputer. These results are compared with {\bf cache aware} pen-and-paper performance modeling.
+        \item Invited to AMD tools workship at the University of Oregon port the algorithm onto {\bf HIP} architecture and tune for performance on AMD Instinct™ series MI300A devices. 
+    \end{itemize}
+\end{itemize}
+
+{\bf National Renewable Energy Laboratory} \hfill June 2022-August 2022 \\
+Dr. K. Shankari \\
+Worked on {\sl  Evaluating The Interplay Between Trajectory Segmentation and Mode Inference Errors}
+\begin{itemize}[itemsep=0em]
+    \item \textbf{Introduced a framework} to evaluate accuracy of trip length computations and mode inference for continuous mode-segmented trajectories on groups of trips. 
+    \begin{itemize}[itemsep=0em]
+        \item Developed a temporal alignment algorithm to classify temporal and spatial errors in a single metric and implemented the algorithm in python \url{https://github.com/kennykos/mobilitynet-analysis-scripts}
+        \item Applied the framework to the NREL OpenPATH pipeline using MobilityNet, a public dataset containing information from three \emph{artificial timelines} that cover 15 different travel modes.
+        \item Evaluated travel data collected on smartphones on android and iOS operating systems that was post-processed by different machine learning  algorithms.
+    \end{itemize}
+    \item \textbf{Co-authored a manuscript} currently Published in the Transportation Research Record: \url{https://doi.org/10.1177/03611981231208154}.
+    \item \textbf{Results presented} at the Transportation Research Board Annual Meeting 2023.
+\end{itemize}
+
+\vspace{-8pt}
+{\bf University of Illinois Department of Mathematics} \hfill Jan 2022-May 2023 \\
+Dr. Zoi Rapti \\
+Worked on {\sl Seasonality and Immunity in Disease Dynamics}
+\begin{itemize}[itemsep=0em]
+    \item \textbf{Co-designed and Co-developed a dynamical model} with another undergraduate student and Professor Rapti to investigate {\it Daphnia dentifera} disease dynamics.
+    \item \textbf{Presented results} at the University of Illinois Chicago Undergraduate Mathematics Symposium 2022 and the University of Illinois Urbana-Campaign Undergraduate Research Symposium 2022.
+\end{itemize}
+
+\vspace{-8pt}
+{\bf Illinois Geometry Lab} \hfill January 2021-May 2022 \\
+Dr. Joey Palmer \\
+Worked on {\sl Toric and Semitoric Packing Capacities}
+\begin{itemize}[itemsep=0em]
+    \item \textbf{Investigated packing capacities} with a team of undergraduate student and Professor Palmer to exactly compute packing capacities.
+    \begin{itemize}[itemsep=0em]
+        \item Developed an algorithm to explicitly compute toric packing capacities and implemented the algorithm in python \url{https://github.com/kennykos/Semi-toric_Packing_Capacity}.
+        \item Solved the equivariant semitoric perfect packing problem.
+    \end{itemize}
+    \item \textbf{Co-authored a manuscript} currently Published in Symmetry, Integrability and Geometry: Methods and Applications: \url{https://doi.org/10.3842/SIGMA.2023.081}.
+    \item \textbf{Presented results} at University of Illinois Urbana-Campaign Illinois Geometry Lab Poster Presentation Spring 2021, Fall 2022, Spring 2022.
+    \item \textbf{Received} 2022 Illinois Geometry Lab Outstanding Research Award.
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	GRANTS and AWARDS SECTION
+%----------------------------------------------------------------------------------------
+\vspace{-8pt}
+\section{Grants/Awards}
+
+CSEM Fellowship \hfill 2024-2028 \\
+Illinois Geometry Lab Outstanding Research Award \hfill 2022\\
+Americorps Education Award  \hfill 2021 \\
+Heery Scholarship Recipient \hfill 2020-21\\
+
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+\vspace{-8pt}
+\section{Work \\ Experience}
+
+{\bf University of Illinois Department of Computer Science} \hfill October 2022-May 2023 \\
+CS 450 Numerical Analysis Course Assistant
+\begin{itemize}[itemsep=0em]
+\item \textbf{Graded} Mathematical \& CS theory homework problems for an advanced undergraduate/graduate course.
+\end{itemize} 
+
+\vspace{-8pt}
+{\bf National Renewable Energy Laboratory} \hfill June 2022-August 2022 \\
+Science Undergraduate Laboratory Internship
+\begin{itemize}[itemsep=0em]
+\item Developed continuous mode-segmented trajectory framework (see research section above).
+\item Worked with a \textbf{team of 3 interns} on statistical methods for trajectory \textbf{error propagation}.
+\item Participated in numerous Department of Energy \textbf{professional development activities and workshops}.
+\end{itemize} 
+
+\vspace{-8pt}
+{\bf University of Illinois Department of Mathematics} \hfill August 2021-May 2022 \\
+Mathematics and Statistics Student Support Center
+\begin{itemize}[itemsep=0em]
+\item Hosted \textbf{drop in office hours} for all mathematics courses up to Calculus II.
+\end{itemize} 
+
+
+
+%----------------------------------------------------------------------------------------
+%	Community Involvement
+%----------------------------------------------------------------------------------------
+\vspace{-8pt}
+\section{Community \\ Involvement}
+
+{\bf CSEM Student Forum} \hfill August 2024-June 2025 \\
+Co-host
+\begin{itemize}[itemsep=0em]
+    \item General organization (including speaker invitation) for a weekly seminar series given by current CSEM graduate students to their peers. The aim of the forum is to expose students to each other's research, encourage collaboration, and provide opportunities to practice presentation skills.
+\end{itemize}
+
+\vspace{-8pt}
+
+{\bf UT Austin Green Fund} \hfill January 2024-June 2025 \\
+Committee Member
+\begin{itemize}[itemsep=0em]
+    \item Member of a small student-faculty committee that reviews proposals and awards for the UT Austin Green Fund, a competitive grant program funded by a tuition allocation to support sustainability related projects and initiatives proposed by university students, faculty or staff.
+\end{itemize}
+
+\vspace{-8pt}
+
+{\bf Chicago Pre-College Science and Engineering Program} \hfill October 2022-December 2022 \\
+STEM Mentor
+\begin{itemize}[itemsep=0em]
+    \item Assisted in the {teaching of a data-science curriculum} at Kenwood Academy high school in Chicago for $11^{th}$ and $12^{th}$ graders. 
+    \item Developed a plant biology and environmental sustainability curriculum for $2^{nd}$ graders which will be taught at the Urbana Neighborhood Connections Center.
+\end{itemize}
+
+\vspace{-8pt}
+
+% {\bf Students for Environmental Concerns} \hfill January 2020-May2023 \\
+% Secretary (August 2021-May 2022), President (August 2022-May 2023)
+% \begin{itemize}[itemsep=0em]
+% \item Lead an executive board of 10 undergraduates and an organization with 50+ general members.
+% \item Oversee fundraising of \$500+ per academic semester.
+% \item Develop and oversee various projects
+% \begin{itemize}
+%     \item \textbf{Develop and teach curriculum} regarding environmental ecology and sustainability to Urbana elementary school students.
+%     \item Work with Facilities and Services to \textbf{implement a green-rooftop} on the engineering campus.
+%     \item Run a \textbf{community garden} with a local non-profit. 
+%     \item Generate and publish independent \textbf{University of Illinois System Green Investment Report}.
+%     \item Publish the Green Observer \textbf{Environmental Magazine}.
+%     \item Implement \textbf{Illinois Climate Action Plan} objectives.
+% \end{itemize}
+% \end{itemize}
+
+% {\bf Illinois Student Government} \hfill August 2019-May 2020 \\
+% Champaign County Board Liaison 
+% \begin{itemize}[itemsep=0em]
+% \item Served as Quorum member for the Student Government Department of Governmental Relations.
+% \item Attended Champaign County Board meetings and engaged in discussion with council members to build and maintain healthy relations between the Illinois Student Government and Champaign County.
+% \item Co-authored resolutions regarding criminal justice.
+% \end{itemize}
+
+
+\end{resume}
+\end{document}
