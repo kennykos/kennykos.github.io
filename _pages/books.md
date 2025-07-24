@@ -2,7 +2,7 @@
 layout: books
 permalink: /books/
 title: Library
-nav: true
+nav: false
 nav_order: 4
 list_title: Welcome to my Library 📚
 ---
