@@ -13,3 +13,9 @@ assets/atms502
 assets/cs555
 .vscode
 *.swp
+# Ignore latex auxiliary files
+*.aux
+*.fdb_latexmk
+*.fls
+*.gz
+*.log

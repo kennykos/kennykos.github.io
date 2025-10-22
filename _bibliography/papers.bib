@@ -3,7 +3,8 @@
 
  @article{Du_Kosmacher_Liu_Massman_Palmer_Thieme_Wu_Zhang_2023, title={Packing Densities of Delzant and Semitoric Polygons}, volume={19}, ISSN={18150659}, DOI={10.3842/SIGMA.2023.081}, journal={SIGMA. Symmetry, Integrability and Geometry: Methods and Applications}, publisher={SIGMA. Symmetry, Integrability and Geometry: Methods and Applications}, author={Du, Yu and Kosmacher, Gabriel and Liu, Yichen and Massman, Jeff and Palmer, Joseph and Thieme, Timothy and Wu, Jerry and Zhang, Zheyu}, year={2023}, month=oct, pages={081}, language={en},
   arxiv={2210.06415},
-  pdf={https://www.emis.de/journals/SIGMA/2023/081/},
+  html = {https://sigma-journal.com/2023/081/},
+  pdf={sigma23-081.pdf},
   preview={semitoric-polygon.png},
   abstract = {     Exploiting the relationship between 4-dimensional toric and semitoric integrable systems with Delzant and semitoric polygons, respectively, we develop techniques to compute certain equivariant packing densities and equivariant capacities of these systems by working exclusively with the polygons. This expands on results of Pelayo and Pelayo-Schmidt. We compute the densities of several important examples and we also use our techniques to solve the equivariant semitoric perfect packing problem, i.e., we list all semitoric polygons for which the associated semitoric system admits an equivariant packing which fills all but a set of measure zero of the manifold. This paper also serves as a concise and accessible introduction to Delzant and semitoric polygons in dimension four. }
  }
@@ -27,6 +28,22 @@ from the OpenPATH project. Our framework concretely shows the variance of the di
 to (0.011, 0.0407) (Android, iOS) after postprocessing. Similarly, weighted F-scores for mode inference increase from
 (0.25, 0.29) to (0.60, 0.74) (iOS, Android) between random forest and Geographic Information Systems (GIS)-based
 models. We hope that this standardized method will be adapted to evaluate other, potentially proprietary, travel diary
-algorithms. The results can be used to understand and improve the state of the art in the travel diary creation field.}
+algorithms. The results can be used to understand and improve the state of the art in the travel diary creation field.},
+pdf={trb_2023.pdf},
  }
 
+@misc{genten_mttkrp,
+      title={A Performance Portable Matrix Free Dense MTTKRP in GenTen}, 
+      author={Gabriel Kosmacher and Eric T. Phipps and Sivasankaran Rajamanickam},
+      year={2025},
+      eprint={2510.14891},
+      archivePrefix={arXiv},
+      primaryClass={cs.MS},
+      url={https://arxiv.org/abs/2510.14891}, 
+      type={preprint},
+      abstract = {
+     We extend the GenTen tensor decomposition package by introducing an accelerated dense matricized tensor times Khatri-Rao product (MTTKRP), the workhorse kernel for canonical polyadic (CP) tensor decompositions, that is portable and performant on modern CPU and GPU architectures. In contrast to the state-of-the-art matrix multiply based MTTKRP kernels used by Tensor Toolbox, TensorLy, etc., that explicitly form Khatri-Rao matrices, we develop a matrix-free element-wise parallelization approach whose memory cost grows with the rank R like the sum of the tensor shape O(R(n+m+k)), compared to matrix-based methods whose memory cost grows like the product of the tensor shape O(R(mnk)). For the largest problem we study, a rank 2000 MTTKRP, the smaller growth rate yields a matrix-free memory cost of just 2% of the matrix-based methods, a 50x improvement. In practice, the reduced memory impact means our matrix-free MTTKRP can compute a rank 2000 tensor decomposition on a single NVIDIA H100 instead of six H100s using a matrix-based MTTKRP. We also compare our optimized matrix-free MTTKRP to baseline matrix-free implementations on different devices, showing a 3x single-device speedup on an Intel 8480+ CPU and an 11x speedup on a H100 GPU. In addition to numerical results, we provide fine grained performance models for an ideal multi-level cache machine, compare analytical performance predictions to empirical results, and provide a motivated heuristic selection for selecting an algorithmic hyperparameter. },
+      arxiv={2510.14891},
+      pdf = {2510.14891v1.pdf},
+      preview = {tens_tile.png},
+}
