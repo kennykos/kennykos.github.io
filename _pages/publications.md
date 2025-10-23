@@ -2,7 +2,6 @@
 layout: page
 permalink: /publications/
 title: Publications
-description: An up-to-date list is available on <a href="https://scholar.google.com/citations?user=Lmwd5akAAAAJ&hl=en" target="_blank">Google Scholar</a>.
 # separate year lists for articles and preprints
 article_years: [2024, 2023]
 preprint_years: [2025]
@@ -11,6 +10,7 @@ nav_order: 1
 ---
 
 <div class="publications">
+An up-to-date list is available on <a href="https://scholar.google.com/citations?user=Lmwd5akAAAAJ&hl=en" target="_blank">Google Scholar</a>.
 
 <h1>Conference & Journal Articles</h1>
 {%- for y in page.article_years %}
