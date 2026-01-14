@@ -3,7 +3,7 @@ layout: page
 permalink: /publications/
 title: Publications
 # separate year lists for articles and preprints
-article_years: [2024, 2023]
+article_years: [2026, 2024, 2023]
 preprint_years: [2025]
 nav: true
 nav_order: 1
