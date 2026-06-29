@@ -1,7 +1,4 @@
----
----
-
- @article{Du_Kosmacher_Liu_Massman_Palmer_Thieme_Wu_Zhang_2023, title={Packing Densities of Delzant and Semitoric Polygons}, volume={19}, ISSN={18150659}, DOI={10.3842/SIGMA.2023.081}, journal={SIGMA. Symmetry, Integrability and Geometry: Methods and Applications}, publisher={SIGMA. Symmetry, Integrability and Geometry: Methods and Applications}, author={Du, Yu and Kosmacher, Gabriel and Liu, Yichen and Massman, Jeff and Palmer, Joseph and Thieme, Timothy and Wu, Jerry and Zhang, Zheyu}, year={2023}, month=oct, pages={081}, language={en},
+@article{Du_Kosmacher_Liu_Massman_Palmer_Thieme_Wu_Zhang_2023, title={Packing Densities of Delzant and Semitoric Polygons}, volume={19}, ISSN={18150659}, DOI={10.3842/SIGMA.2023.081}, journal={SIGMA. Symmetry, Integrability and Geometry: Methods and Applications}, publisher={SIGMA. Symmetry, Integrability and Geometry: Methods and Applications}, author={Du, Yu and Kosmacher, Gabriel and Liu, Yichen and Massman, Jeff and Palmer, Joseph and Thieme, Timothy and Wu, Jerry and Zhang, Zheyu}, year={2023}, month=oct, pages={081}, language={en},
   arxiv={2210.06415},
   html = {https://sigma-journal.com/2023/081/},
   pdf={sigma23-081.pdf},
@@ -36,19 +33,19 @@ pdf={trb_2023.pdf},
       title={A Performance Portable Matrix Free Dense MTTKRP in GenTen}, 
       author={Gabriel Kosmacher and Eric T. Phipps and Sivasankaran Rajamanickam},
       year={2025},
+      month=10,
       eprint={2510.14891},
       archivePrefix={arXiv},
       primaryClass={cs.MS},
       url={https://arxiv.org/abs/2510.14891}, 
       type={preprint},
-      abstract = {
-     We extend the GenTen tensor decomposition package by introducing an accelerated dense matricized tensor times Khatri-Rao product (MTTKRP), the workhorse kernel for canonical polyadic (CP) tensor decompositions, that is portable and performant on modern CPU and GPU architectures. In contrast to the state-of-the-art matrix multiply based MTTKRP kernels used by Tensor Toolbox, TensorLy, etc., that explicitly form Khatri-Rao matrices, we develop a matrix-free element-wise parallelization approach whose memory cost grows with the rank R like the sum of the tensor shape O(R(n+m+k)), compared to matrix-based methods whose memory cost grows like the product of the tensor shape O(R(mnk)). For the largest problem we study, a rank 2000 MTTKRP, the smaller growth rate yields a matrix-free memory cost of just 2% of the matrix-based methods, a 50x improvement. In practice, the reduced memory impact means our matrix-free MTTKRP can compute a rank 2000 tensor decomposition on a single NVIDIA H100 instead of six H100s using a matrix-based MTTKRP. We also compare our optimized matrix-free MTTKRP to baseline matrix-free implementations on different devices, showing a 3x single-device speedup on an Intel 8480+ CPU and an 11x speedup on a H100 GPU. In addition to numerical results, we provide fine grained performance models for an ideal multi-level cache machine, compare analytical performance predictions to empirical results, and provide a motivated heuristic selection for selecting an algorithmic hyperparameter. },
+      abstract = {We extend the GenTen tensor decomposition package by introducing an accelerated dense matricized tensor times Khatri-Rao product (MTTKRP), the workhorse kernel for canonical polyadic (CP) tensor decompositions, that is portable and performant on modern CPU and GPU architectures. In contrast to the state-of-the-art matrix multiply based MTTKRP kernels used by Tensor Toolbox, TensorLy, etc., that explicitly form Khatri-Rao matrices, we develop a matrix-free element-wise parallelization approach whose memory cost grows with the rank R like the sum of the tensor shape O(R(n+m+k)), compared to matrix-based methods whose memory cost grows like the product of the tensor shape O(R(mnk)). For the largest problem we study, a rank 2000 MTTKRP, the smaller growth rate yields a matrix-free memory cost of just 2\% of the matrix-based methods, a 50x improvement. In practice, the reduced memory impact means our matrix-free MTTKRP can compute a rank 2000 tensor decomposition on a single NVIDIA H100 instead of six H100s using a matrix-based MTTKRP. We also compare our optimized matrix-free MTTKRP to baseline matrix-free implementations on different devices, showing a 3x single-device speedup on an Intel 8480+ CPU and an 11x speedup on a H100 GPU. In addition to numerical results, we provide fine grained performance models for an ideal multi-level cache machine, compare analytical performance predictions to empirical results, and provide a motivated heuristic selection for selecting an algorithmic hyperparameter.},
       arxiv={2510.14891},
       pdf = {2510.14891v1.pdf},
       preview = {tens_tile.png},
 }
 
-@article{Kosmacher_Max_Rapti_Cáceres_Stewart Merrill_2026, title={The Role of Host Immunity and the Environment in Seasonal Disease Dynamics}, volume={88}, ISSN={1522-9602}, doi={10.1007/s11538-025-01582-3}, abstract={In both human and wildlife disease systems, temporal shifts in host immunity may shape the timing and severity of epidemics. Yet, immune responses, as well as seasonal patterns in their expression, are difficult to measure. Rather, field studies collect phenomenological data on infection outcomes. Pairing epidemic data of multiple outbreaks with models that directly parameterize immune metrics can be a powerful approach for exploring the role of time-varying immunity on disease. Field data can be used to determine how well a parameterized model can reproduce trends and differences observed among outbreaks.}, number={2}, journal={Bulletin of Mathematical Biology}, 
+@article{Kosmacher_Max_Rapti_Caceres_Stewart_Merrill_2026, title={The Role of Host Immunity and the Environment in Seasonal Disease Dynamics}, volume={88}, ISSN={1522-9602}, doi={10.1007/s11538-025-01582-3}, abstract={In both human and wildlife disease systems, temporal shifts in host immunity may shape the timing and severity of epidemics. Yet, immune responses, as well as seasonal patterns in their expression, are difficult to measure. Rather, field studies collect phenomenological data on infection outcomes. Pairing epidemic data of multiple outbreaks with models that directly parameterize immune metrics can be a powerful approach for exploring the role of time-varying immunity on disease. Field data can be used to determine how well a parameterized model can reproduce trends and differences observed among outbreaks.}, number={2}, journal={Bulletin of Mathematical Biology}, 
 	author={Kosmacher, Gabriel and Max, Dillon and Rapti, Zoi and Cáceres, Carla E. and Stewart Merrill, Tara E.}, year={2026}, month=jan, pages={18},
 	html={https://rdcu.be/eYXIr},
 	pdf={Seasonality_Manuscript_02172025.pdf},
@@ -56,3 +53,18 @@ pdf={trb_2023.pdf},
 	presentation={daphnia_pres_uiuc_urs_2023.pdf},
 }
 
+
+@misc{kosmacher2026performanceportablefastewald,
+      title={A performance portable fast Ewald summation for Stokes flow}, 
+      author={Gabriel Kosmacher and Ziyu Du and Joar Bagge and George Biros},
+      year={2026},
+      month=6,
+      eprint={2606.19059},
+      arxiv={2606.19059},
+      archivePrefix={arXiv},
+      primaryClass={math.NA},
+      url={https://arxiv.org/abs/2606.19059}, 
+      type={preprint},
+      pdf = {2606.19059v1.pdf},
+      preview={intensity_plot_cell224_n4000000_p2pMinfcache_pgM0cache_devH200.png}
+}

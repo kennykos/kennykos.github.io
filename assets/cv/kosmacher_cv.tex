@@ -25,11 +25,19 @@
 %\documentclass[letterpaper,10pt]{article}
 \usepackage{helvet} % Default font is the helvetica postscript font
 %\usepackage{newcent} % To change the default font to the new century schoolbook postscript font uncomment this line and comment the one above
-\usepackage[pdftex]{hyperref,xcolor}
-\usepackage{bibentry} % for publications
+\usepackage{hyperref}
+\usepackage{xcolor}
 \definecolor{linkblue}{rgb}{0,0,.6}
 \definecolor{citered}{rgb}{.7,0,0}
 \hypersetup{colorlinks =true, linkcolor=linkblue, citecolor = citered, urlcolor=linkblue}
+
+% --- BIBLATEX & BIBER CONFIGURATION ---
+\usepackage[backend=biber, style=authoryear, sorting=ydnt]{biblatex}
+
+% Define separate resource pools
+\addbibresource{../../_bibliography/papers.bib}
+\addbibresource{../../_bibliography/presentations.bib}
+% --------------------------------------
 
 
 %\usepackage[bottom=0.5in, top=0.8in]{geometry}
@@ -92,28 +100,33 @@
 %----------------------------------------------------------------------------------------
 \vspace{-8pt}
 \section{Publications}
+\begin{refsection}[../../_bibliography/papers.bib]
+    \nocite{*} % Includes everything from papers.bib
+    \printbibliography[heading=none,type=article]
+\end{refsection}
+\vspace{15pt}
 
-\textbf{Evaluating the Interplay between Trajectory Segmentation and Mode Inference Error} \\
-\sl{\textbf{Gabriel Kosmacher}, K. Shankari}
-\\ Transportation Research Record (2023)
- \\ Available at \href{https://journals.sagepub.com/doi/10.1177/03611981231208154}{https://journals.sagepub.com/doi/10.1177/03611981231208154}
-
-\textbf{Packing Densities of Delzant and Semitoric Polygons} \\
-\sl{Yu Du, \textbf{Gabriel Kosmacher}, Yichen Liu, Jeff Massman, Joseph Palmer, Timothy Thieme, Jerry Wu, Zheyu Zhang} \\
-SIGMA 19 (2023), 081, 42 pages \\ Available at \href{https://www.emis.de/journals/SIGMA/2023/081/}{https://www.emis.de/journals/SIGMA/2023/081/}
-
+%----------------------------------------------------------------------------------------
+%	PREPRINTS
+%----------------------------------------------------------------------------------------
+\vspace{-8pt}
+\section{Preprints}
+\begin{refsection}[../../_bibliography/papers.bib]
+    \nocite{*} % Includes everything from papers.bib
+    \printbibliography[heading=none,nottype=article]
+\end{refsection}
+\vspace{15pt}
 
 %----------------------------------------------------------------------------------------
 %	PRESENTATIONS SECTION
 %----------------------------------------------------------------------------------------
 \vspace{-8pt}
-\section{Presentations} 
-
-{\sl Performance Portable Spectral Ewald Summation with PyKokkos} (HPSF25, Chicago IL, June 2025)
-{\sl A Primer on Boundary Integral Equation Methods for Elliptic PDEs} (CSEM Student Forum, 2024) \\
-{\sl I know I'm Right, But Does my Phone?} (TRB 2023, NREL SULI 2022)\\
-{\sl Seasonality and Immunity in Disease Dynamics.} (UIC UMS 2022, UIUC URS 2022) \\
-{\sl Toric and Semitoric Polygon Packing.} (IGL Spring 2022, Fall 2021, Spring 2021) 
+\section{Presentations}
+\begin{refsection}[../../_bibliography/presentations.bib]
+    \nocite{*} % Includes everything from papers.bib
+    \printbibliography[heading=none]
+\end{refsection}
+\vspace{15pt}
 
 %----------------------------------------------------------------------------------------
 %	RESEARCH EXPERIENCE SECTION

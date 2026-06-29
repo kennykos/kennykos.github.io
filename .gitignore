@@ -19,3 +19,8 @@ assets/cs555
 *.fls
 *.gz
 *.log
+*.bbl*
+*.bcf*
+*.blg
+*.out
+*.run.xml
