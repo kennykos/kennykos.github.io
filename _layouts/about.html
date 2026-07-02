@@ -40,6 +40,12 @@ layout: default
             {{ content }}
           </div>
 
+          <div id="random-quote-box" class="random-quote-box" style="display: none;">
+            <blockquote id="random-quote-text" class="quote-text"></blockquote>
+            <p id="random-quote-attr" class="quote-attribution"></p>
+          </div>
+          <script type="application/json" id="random-quote-data">{{ site.data.quotes | jsonify }}</script>
+
           {% if page.news -%}
           <!-- News -->
           {%- include news.html %}

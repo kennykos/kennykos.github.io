@@ -51,3 +51,25 @@
  *****************************************************************************/
  
  // TODO: redefine projects layout.
+
+ /******************************************************************************
+  * Random Quote
+  ******************************************************************************/
+
+  .random-quote-box {
+   border: 2px solid #000;
+   border-radius: 0;
+   padding: 1em 1.5em;
+   margin: 1.5em 0;
+
+   .quote-text {
+     font-style: italic;
+     margin: 0 0 0.5em 0;
+   }
+
+   .quote-attribution {
+     text-align: right;
+     margin: 0;
+     font-weight: bold;
+   }
+ }
