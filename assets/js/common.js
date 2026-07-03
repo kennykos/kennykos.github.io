@@ -20,7 +20,15 @@ function renderRandomQuote(quotes, $quoteBox) {
         $attr.append($('<em></em>').text(chosen.source));
     }
 
-    $quoteBox.find('#random-quote-text').text(chosen.content);
+    var $text = $quoteBox.find('#random-quote-text');
+    $text.empty();
+    String(chosen.content).split('\n').forEach(function(line, idx) {
+        if (idx > 0) {
+            $text.append('<br>');
+        }
+        $text.append(document.createTextNode(line));
+    });
+
     $quoteBox.show();
 }
 
