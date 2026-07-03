@@ -219,6 +219,7 @@ plugins:
   - jekyll/scholar
   - jekyll-sitemap
   - jekyll-link-attributes
+  - jekyll-github-card
   - jemoji
 
 # Sitemap settings
