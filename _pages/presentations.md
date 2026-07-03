@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: history
 permalink: /presentations/
 title: Presentations
 years: [2025]

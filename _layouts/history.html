@@ -1,0 +1,225 @@
+---
+layout: default
+---
+<!-- history.html -->
+<div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <p class="post-description">{{ page.description }}</p>
+  </header>
+
+  <article>
+    <div class="history-layout">
+      {{ content }}
+    </div>
+  </article>
+
+</div>
+
+<style>
+/* ── History layout: timeline with left date column ───────────────────────── */
+
+.history-layout .publications {
+  margin-top: 2rem;
+}
+
+/* Preamble text (e.g. Google Scholar link) sits above the timeline */
+.history-layout .publications > p,
+.history-layout .publications > .history-preamble {
+  margin-bottom: 1.5rem;
+}
+
+/* Each section block (Conference/Journal, Preprints, …) */
+.history-section-block {
+  margin-bottom: 3rem;
+}
+
+/* Section title sits above the rows, full width */
+.history-section-title {
+  color: var(--global-theme-color);
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid var(--global-theme-color);
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+/* Each year row: left date col + right entries col */
+.history-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Left column — border only spans the card rows, not the title */
+.history-left {
+  width: 50px;
+  flex-shrink: 0;
+  text-align: right;
+  padding-right: 1rem;
+  border-right: 2px solid var(--global-divider-color);
+  padding-top: 1rem;
+}
+
+/* Year (and month when available) */
+.history-year {
+  color: var(--global-divider-color);
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* Right column --------------------------------------------------------------- */
+.history-right {
+  flex: 1;
+  min-width: 0;
+  padding-left: 1.5rem;
+}
+
+.history-right ol.bibliography {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.history-right ol.bibliography li {
+  margin-bottom: 1rem;
+}
+
+/* Expand bib entry columns to fill the right column fully.
+   bib.html uses col-sm-2 (preview) + col-sm-8 (content), leaving 2 cols unused.
+   Override so content stretches to use all available width. */
+.history-right .row > .col-sm-2.preview,
+.history-right .row > .col-sm-2.abbr {
+  flex: 0 0 90px;
+  max-width: 90px;
+}
+
+.history-right .row > .col-sm-8 {
+  flex: 1;
+  max-width: none;
+}
+
+/* Mobile: stack columns */
+@media (max-width: 576px) {
+  .history-row {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .history-left {
+    width: auto;
+    text-align: left;
+    border-right: none;
+    border-bottom: 2px solid var(--global-divider-color);
+    padding-right: 0;
+    padding-bottom: 0.5rem;
+  }
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('.history-layout .publications').forEach(function (pub) {
+    // Snapshot children before mutation (we'll move nodes, not clone them,
+    // so jQuery event listeners set by common.js are preserved).
+    var nodes = Array.from(pub.childNodes);
+    var fragment = document.createDocumentFragment();
+
+    var pendingLabel   = null;   // h1 text waiting to attach to the next row
+    var currentSection = null;   // current .history-section-block div
+    var currentRight   = null;   // .history-right of the current row
+
+    nodes.forEach(function (node) {
+      /* ── Skip pure whitespace text nodes ── */
+      if (node.nodeType === Node.TEXT_NODE) {
+        if (node.textContent.trim() === '') return;
+        fragment.appendChild(node);
+        return;
+      }
+
+      if (node.nodeType !== Node.ELEMENT_NODE) return;
+
+      var tag = node.tagName.toLowerCase();
+
+      /* ── Section label (h1) → store text, discard the element ── */
+      if (tag === 'h1') {
+        pendingLabel   = node.textContent.trim();
+        currentSection = null;
+        currentRight   = null;
+        return;  // don't append h1 — it becomes the .history-type-label div
+      }
+
+      /* ── Year header (h2.year) → build a new history-row ── */
+      if (tag === 'h2' && node.classList.contains('year')) {
+        if (pendingLabel !== null || currentSection === null) {
+          currentSection = document.createElement('div');
+          currentSection.className = 'history-section-block';
+
+          /* Section title above the rows, with underline */
+          if (pendingLabel !== null) {
+            var titleEl = document.createElement('div');
+            titleEl.className = 'history-section-title';
+            titleEl.textContent = pendingLabel;
+            currentSection.appendChild(titleEl);
+            pendingLabel = null;
+          }
+
+          fragment.appendChild(currentSection);
+        }
+
+        var row = document.createElement('div');
+        row.className = 'history-row';
+
+        /* Left column — only year label here, no section title */
+        var left = document.createElement('div');
+        left.className = 'history-left';
+
+        var yearDiv = document.createElement('div');
+        yearDiv.className = 'history-year';
+        yearDiv.textContent = node.textContent.trim();
+        left.appendChild(yearDiv);
+
+        /* Right column */
+        var right = document.createElement('div');
+        right.className = 'history-right';
+
+        row.appendChild(left);
+        row.appendChild(right);
+        currentSection.appendChild(row);
+        currentRight = right;
+        return;  // h2.year itself is replaced by yearDiv
+      }
+
+      /* ── Bibliography list → move (not clone) into current right col ── */
+      if (tag === 'ol' && node.classList.contains('bibliography') && currentRight) {
+        currentRight.appendChild(node);  // moves the live node, preserving jQuery listeners
+        return;
+      }
+
+      /* ── Everything else (preamble text, links, etc.) ── */
+      fragment.appendChild(node);
+    });
+
+    pub.innerHTML = '';
+    pub.appendChild(fragment);
+
+    /* Re-bind abstract/bibtex toggles using the same logic as common.js,
+       since jQuery's $(document).ready bindings ran on original elements. */
+    if (typeof $ !== 'undefined') {
+      $(pub).find('a.abstract').off('click').on('click', function () {
+        $(this).parent().parent().find('.abstract.hidden').toggleClass('open');
+        $(this).parent().parent().find('.bibtex.hidden.open').toggleClass('open');
+      });
+      $(pub).find('a.bibtex').off('click').on('click', function () {
+        $(this).parent().parent().find('.bibtex.hidden').toggleClass('open');
+        $(this).parent().parent().find('.abstract.hidden.open').toggleClass('open');
+      });
+    }
+  });
+});
+</script>
