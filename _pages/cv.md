@@ -5,4 +5,5 @@ title: CV
 nav: true
 nav_order: 3
 cv_pdf: ../cv/kosmacher_cv.pdf
+show_pdf: true
 ---

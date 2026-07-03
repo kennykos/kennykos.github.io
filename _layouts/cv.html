@@ -2,6 +2,14 @@
 layout: default
 ---
 <!-- _layouts/cv.html -->
+{% if page.show_pdf and page.cv_pdf %}
+  {% assign cv_pdf_url = page.cv_pdf | prepend: 'assets/pdf/' | relative_url %}
+  <meta http-equiv="refresh" content="0; url={{ cv_pdf_url }}">
+  <script>
+    window.location.replace("{{ cv_pdf_url }}");
+  </script>
+  <p>Redirecting to the <a href="{{ cv_pdf_url }}">CV PDF</a>...</p>
+{% else %}
         <div class="post">
 
           <header class="post-header">
@@ -33,3 +41,4 @@ layout: default
           </article>
 
         </div>
+{% endif %}
