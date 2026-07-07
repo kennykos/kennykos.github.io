@@ -2,5 +2,14 @@ github_users:
   - kennykos
 
 github_repos:
-  - ut-padas/parki
-  - kokkos/pykokkos
+  - name: ut-padas/parki
+    contributions: >
+      Project maintainer and lead contributor.
+      Developed CPU/GPU Ewald summation algorithms for
+      the Stokes and Laplace kernels in different periodic
+      regimes.
+  - name: kokkos/pykokkos
+    contributions: >
+      Project collaborator and top 10 contributor.
+      Implemented functionality for mathematical special functions, automatic just-in-time (JIT) recompilation, CMake
+      JIT compilation, building and installing on MacOS and AMD GPUs, documentation and continuous integration.

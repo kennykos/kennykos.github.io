@@ -115,6 +115,47 @@
    }
  }
 
+ /* 2-column card grid for the repositories page */
+ .repositories {
+   display: grid !important;
+   grid-template-columns: 1fr;
+   gap: 1rem;
+   align-items: start;
+
+
+
+   /* Make every card fill its grid cell */
+   .github-card {
+     max-width: 100% !important;
+     width: 100% !important;
+     margin: 0;
+     box-sizing: border-box;
+   }
+ }
+
+ /* Contributions section inside .github-card repo cards */
+ .github-card .github-card-contributions {
+   border-top: 1px solid var(--github-card-border);
+   margin-top: 12px;
+   padding-top: 12px;
+
+   .github-card-contributions-title {
+     font-size: 0.75rem;
+     font-weight: 600;
+     text-transform: uppercase;
+     letter-spacing: 0.05em;
+     color: var(--github-card-text-secondary);
+     margin-bottom: 6px;
+   }
+
+   .github-card-contributions-text {
+     font-size: 0.875rem;
+     color: var(--github-card-text);
+     line-height: 1.5;
+     margin: 0;
+   }
+ }
+
  /* Expand bib entry columns inside repo cards to fill available width */
  .history-right .row > .col-sm-2.preview,
  .history-right .row > .col-sm-2.abbr {
