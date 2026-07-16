@@ -8,6 +8,7 @@ require "net/http"
 require "json"
 require "uri"
 require "cgi"
+require "kramdown"
 
 module Jekyll
   module GithubCard
@@ -128,10 +129,11 @@ module Jekyll
           </span>
         HTML
 
-        contributions_html = contributions ? <<~HTML : ""
+        contributions_md = contributions ? Kramdown::Document.new(contributions).to_html.strip : nil
+        contributions_html = contributions_md ? <<~HTML : ""
           <div class="github-card-contributions">
             <div class="github-card-contributions-title">My Contributions</div>
-            <p class="github-card-contributions-text">#{CGI.escapeHTML(contributions)}</p>
+            <div class="github-card-contributions-text">#{contributions_md}</div>
           </div>
         HTML
 
