@@ -41,7 +41,7 @@ pdf={trb_2023.pdf},
       type={preprint},
       abstract = {We extend the GenTen tensor decomposition package by introducing an accelerated dense matricized tensor times Khatri-Rao product (MTTKRP), the workhorse kernel for canonical polyadic (CP) tensor decompositions, that is portable and performant on modern CPU and GPU architectures. In contrast to the state-of-the-art matrix multiply based MTTKRP kernels used by Tensor Toolbox, TensorLy, etc., that explicitly form Khatri-Rao matrices, we develop a matrix-free element-wise parallelization approach whose memory cost grows with the rank R like the sum of the tensor shape O(R(n+m+k)), compared to matrix-based methods whose memory cost grows like the product of the tensor shape O(R(mnk)). For the largest problem we study, a rank 2000 MTTKRP, the smaller growth rate yields a matrix-free memory cost of just 2\% of the matrix-based methods, a 50x improvement. In practice, the reduced memory impact means our matrix-free MTTKRP can compute a rank 2000 tensor decomposition on a single NVIDIA H100 instead of six H100s using a matrix-based MTTKRP. We also compare our optimized matrix-free MTTKRP to baseline matrix-free implementations on different devices, showing a 3x single-device speedup on an Intel 8480+ CPU and an 11x speedup on a H100 GPU. In addition to numerical results, we provide fine grained performance models for an ideal multi-level cache machine, compare analytical performance predictions to empirical results, and provide a motivated heuristic selection for selecting an algorithmic hyperparameter.},
       arxiv={2510.14891},
-      pdf = {2510.14891v1.pdf},
+      pdf = {2026273771.pdf},
       preview = {tens_tile.png},
 }
 
