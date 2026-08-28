@@ -1,6 +1,7 @@
 """
 Process ../../_data folder into tex documents
 """
+import re
 import yaml
 from pathlib import Path
 
@@ -9,6 +10,18 @@ TEX_DIR = Path("sections/")
 TAB_HEADER = r"\begin{tabular}{ p{\leftwidth} | p{\rightwidth}}"
 TAB_FOOTER = "\n\\end{tabular}"
 FILE_HEADER = f"%THIS FILE WAS AUTO-GENERATED\n"
+
+def markdown_to_latex(text):
+    # URL
+    pattern = r'\[([^\]]+)\]\(([^)]+)\)'
+    replacement = r'\\href{\2}{\1}'
+    text = re.sub(pattern, replacement, text)
+    # emph
+    text = re.sub(r'\*(?!\s)([^*]+?)(?<!\s)\*', r'\\emph{\1}', text)
+    # code
+    text = re.sub(r'``([^`]+)``', r'\\texttt{\1}', text)
+
+    return text
 
 def main():
     # read education yaml
@@ -29,6 +42,35 @@ def main():
             if i < len(edu_data)-1:
                 file.write(r"\\")
         file.write(TAB_FOOTER)
+
+    # process repositories.yml
+    with open(DATA_DIR / "repositories.yml", "r") as file:
+        repo_data = yaml.load(file, Loader=yaml.SafeLoader)
+    # write to repositories.tex
+    with open(TEX_DIR / "repositories.tex", "w") as file:
+        file.write(FILE_HEADER)
+        users = ""
+        users = [users.join(fr"\href{{https://github.com/{user}}}{{{user}}}, ") for user in repo_data["github_users"]][0][:-2]
+        print(users)
+        file.write(f"{{\\centering My open-source contributions are made from the {users} GitHub account.\\par}}")
+
+        # begin write to table
+        file.write(r"\vspace{1em}")
+        file.write(TAB_HEADER)
+        for i, entry in enumerate(repo_data["github_repos"]):
+            # parse entry to string
+            name = entry["name"]
+            name = name.replace("/", r"/\newline ")
+            name = r"\href{https://github.com/" + entry["name"] + r"}{\texttt{" + name + "}}"
+
+            contributions = markdown_to_latex(entry["contributions"]).replace("_", "\_")
+            file.write(rf"{name} & {contributions}\\")
+            if i < len(edu_data)-1:
+                file.write(r"\\")
+                file.write("\n")
+        file.write(TAB_FOOTER)
+
+
 
 
 if __name__ == "__main__":
