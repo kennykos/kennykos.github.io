@@ -1,0 +1,29 @@
+\documentclass{article}
+
+\input{colors}
+\input{preamble}
+\input{macros}
+
+% add bibligraphies
+\addbibresource{../../_bibliography/papers.bib}
+
+% boolean flags
+\newif\iftoc
+\toctrue
+
+\begin{document}
+
+\iftoc
+\tableofcontents
+\newpage
+\fi
+
+\section{Education}
+\input{sections/education}
+\section{Research Experience}
+\section{Publications}
+\input{sections/publications}
+\section{Presentations}
+\section{Software}
+
+\end{document}

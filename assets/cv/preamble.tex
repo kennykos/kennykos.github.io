@@ -1,0 +1,31 @@
+\usepackage{ifthen}
+\usepackage{titlesec}
+\usepackage[backend=biber,maxbibnames=99,sorting=ydnt,defernumbers=true, isbn=false, url=false,style=ieee]{biblatex}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=burntOrange,
+    citecolor=green,
+    urlcolor=burntOrange,
+}
+
+% clear out section number, still usable with TOC
+% https://tex.stackexchange.com/questions/30122/generate-table-of-contents-when-section-sections-without-numbering-has-been
+\renewcommand{\thesection}{}
+\renewcommand{\thesubsection}{}
+
+% flush section titles to the left
+\titleformat{\section}{\normalfont\Large\bfseries\raggedright}{\thesection}{0em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries\raggedright}{\thesubsection}{0em}{}
+
+
+% https://tex.stackexchange.com/questions/73136/make-specific-author-bold-using-biblatex
+\renewcommand*{\mkbibnamegiven}[1]{%
+  \ifitemannotation{highlight}
+    {\textbf{#1}}
+    {#1}}
+
+\renewcommand*{\mkbibnamefamily}[1]{%
+  \ifitemannotation{highlight}
+    {\textbf{#1}}
+    {#1}}
