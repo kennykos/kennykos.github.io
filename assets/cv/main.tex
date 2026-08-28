@@ -6,12 +6,14 @@
 
 % add bibligraphies
 \addbibresource{../../_bibliography/papers.bib}
+\addbibresource{../../_bibliography/presentations.bib}
 
 % boolean flags
 \newif\iftoc
 \toctrue
 
 \begin{document}
+\nocite{*}
 
 \iftoc
 \tableofcontents
@@ -23,7 +25,8 @@
 \section{Research Experience}
 \section{Publications}
 \input{sections/publications}
-\section{Presentations}
+\section{Talks}
+\input{sections/presentations}
 \section{Software}
 
 \end{document}
