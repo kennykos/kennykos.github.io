@@ -33,7 +33,7 @@ def main():
         file.write(TAB_HEADER)
         for i, entry in enumerate(edu_data):
             # parse entry to string
-            year = f"\n{entry["start-year"]}-{entry["end-year"]}"
+            year = f"\n{entry["start-year"]} -- {entry["end-year"]}"
             info = rf"{entry["degree"]} \newline {entry["location"]}"
             if "advisor" in entry.keys():
                 info += rf"\newline Advisor: {entry["advisor"]}"
@@ -50,9 +50,8 @@ def main():
     with open(TEX_DIR / "repositories.tex", "w") as file:
         file.write(FILE_HEADER)
         users = ""
-        users = [users.join(fr"\href{{https://github.com/{user}}}{{{user}}}, ") for user in repo_data["github_users"]][0][:-2]
-        print(users)
-        file.write(f"{{\\centering My open-source contributions are made from the {users} GitHub account.\\par}}")
+        users = [users.join(fr"\texttt{{\href{{https://github.com/{user}}}{{{user}}}}}, ") for user in repo_data["github_users"]][0][:-2]
+        file.write(f"{{\\centering \\emph{{My open-source contributions are from the}} {users} \\emph{{GitHub account.}}\\par}}")
 
         # begin write to table
         file.write(r"\vspace{1em}")
@@ -63,12 +62,30 @@ def main():
             name = name.replace("/", r"/\newline ")
             name = r"\href{https://github.com/" + entry["name"] + r"}{\texttt{" + name + "}}"
 
-            contributions = markdown_to_latex(entry["contributions"]).replace("_", "\_")
+            contributions = markdown_to_latex(entry["contributions"]).replace("_", r"\_")
             file.write(rf"{name} & {contributions}\\")
             if i < len(edu_data)-1:
                 file.write(r"\\")
                 file.write("\n")
         file.write(TAB_FOOTER)
+
+    # process students.yml
+    with open(DATA_DIR / "students.yml", "r") as file:
+        stu_data = yaml.load(file, Loader=yaml.SafeLoader)
+
+    # write to students.tex
+    with open(TEX_DIR / "students.tex", "w") as file:
+        # NOTE: for now, just process undergrads
+        undergrads = stu_data["Undergraduates"]
+        file.write(FILE_HEADER)
+        file.write(TAB_HEADER)
+        for undergrad in undergrads:
+            print("start-year" in undergrad.keys())
+            year = f"\n{undergrad["start-year"]} -- {undergrad["end-year"]}"
+            info = f"{undergrad["name"]} ({undergrad["school"]})\\newline {undergrad["description"]}"
+            file.write(rf"{year} & {info} \\")
+        file.write(TAB_FOOTER)
+
 
 
 

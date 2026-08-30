@@ -1,0 +1,6 @@
+Undergraduates:
+  - name: Max Feldman
+    start-year: 2026, January
+    end-year: 2026, May
+    description: PyKokkos GPU kernels for randomized $k$-nearest neighbors.
+    school: UT Austin
