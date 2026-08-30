@@ -1,0 +1,1305 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{ydnt/global/7FC56270E7A70FA81A5935B72EACBE29/global/global}
+    \entry{kosmacher2026performanceportablefastewald}{unpublished}{}
+      \name{author}{4}{}{%
+        {{hash=ef4fc35f768edfa4968e93b8ad4cfc66}{%
+           family={Kosmacher},
+           familyi={K\bibinitperiod},
+           given={Gabriel},
+           giveni={G\bibinitperiod}}}%
+        {{hash=838e9da4e45b83a870412ba358213a3d}{%
+           family={Du},
+           familyi={D\bibinitperiod},
+           given={Ziyu},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=e7aae78e35933cf67663e9efc80c8ef1}{%
+           family={Bagge},
+           familyi={B\bibinitperiod},
+           given={Joar},
+           giveni={J\bibinitperiod}}}%
+        {{hash=c666809dd286126d267d3807218186db}{%
+           family={Biros},
+           familyi={B\bibinitperiod},
+           given={George},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{f3fd6ad0c491f7f98b652c81fb066ac8}
+      \strng{fullhash}{34b9852546a50cc3d84511557c5809e9}
+      \strng{bibnamehash}{34b9852546a50cc3d84511557c5809e9}
+      \strng{authorbibnamehash}{34b9852546a50cc3d84511557c5809e9}
+      \strng{authornamehash}{f3fd6ad0c491f7f98b652c81fb066ac8}
+      \strng{authorfullhash}{34b9852546a50cc3d84511557c5809e9}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelprefix}{A}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{math.NA}
+      \field{eprinttype}{arXiv}
+      \field{month}{6}
+      \field{title}{A performance portable fast Ewald summation for Stokes flow}
+      \field{year}{2026}
+      \true{nocite}
+      \verb{eprint}
+      \verb 2606.19059
+      \endverb
+      \verb{file}
+      \verb 2606.19059v1.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2606.19059
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2606.19059
+      \endverb
+      \annotation{item}{author}{default}{1}{}{0}{highlight}
+    \endentry
+    \entry{Kosmacher_Max_Rapti_Caceres_Stewart_Merrill_2026}{article}{}
+      \name{author}{5}{}{%
+        {{hash=ef4fc35f768edfa4968e93b8ad4cfc66}{%
+           family={Kosmacher},
+           familyi={K\bibinitperiod},
+           given={Gabriel},
+           giveni={G\bibinitperiod}}}%
+        {{hash=7c7db95f5f20a6835be0d10bea180c39}{%
+           family={Max},
+           familyi={M\bibinitperiod},
+           given={Dillon},
+           giveni={D\bibinitperiod}}}%
+        {{hash=d123f79bc61b48d727ce0d9f2b8a1165}{%
+           family={Rapti},
+           familyi={R\bibinitperiod},
+           given={Zoi},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=2c0fa347170698ce94ae09a62808b117}{%
+           family={Cáceres},
+           familyi={C\bibinitperiod},
+           given={Carla\bibnamedelima E.},
+           giveni={C\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=9ac6aceb09a5230fc59b52fb071cc0e7}{%
+           family={Stewart\bibnamedelima Merrill},
+           familyi={S\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={Tara\bibnamedelima E.},
+           giveni={T\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \strng{namehash}{0678c7830383e4ed59f2632a5fd181bc}
+      \strng{fullhash}{9de9303059ce3f4dd96a7cab934813df}
+      \strng{bibnamehash}{9de9303059ce3f4dd96a7cab934813df}
+      \strng{authorbibnamehash}{9de9303059ce3f4dd96a7cab934813df}
+      \strng{authornamehash}{0678c7830383e4ed59f2632a5fd181bc}
+      \strng{authorfullhash}{9de9303059ce3f4dd96a7cab934813df}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelprefix}{A}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In both human and wildlife disease systems, temporal shifts in host immunity may shape the timing and severity of epidemics. Yet, immune responses, as well as seasonal patterns in their expression, are difficult to measure. Rather, field studies collect phenomenological data on infection outcomes. Pairing epidemic data of multiple outbreaks with models that directly parameterize immune metrics can be a powerful approach for exploring the role of time-varying immunity on disease. Field data can be used to determine how well a parameterized model can reproduce trends and differences observed among outbreaks.}
+      \field{issn}{1522-9602}
+      \field{journaltitle}{Bulletin of Mathematical Biology}
+      \field{month}{1}
+      \field{number}{2}
+      \field{title}{The Role of Host Immunity and the Environment in Seasonal Disease Dynamics}
+      \field{volume}{88}
+      \field{year}{2026}
+      \true{nocite}
+      \field{pages}{18}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1007/s11538-025-01582-3
+      \endverb
+      \verb{file}
+      \verb Seasonality_Manuscript_02172025.pdf
+      \endverb
+      \annotation{item}{author}{default}{1}{}{0}{highlight}
+    \endentry
+    \entry{HPSFcon25}{online}{}
+      \name{author}{1}{}{%
+        {{hash=ef4fc35f768edfa4968e93b8ad4cfc66}{%
+           family={Kosmacher},
+           familyi={K\bibinitperiod},
+           given={Gabriel},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Chicago, Illinois}%
+      }
+      \strng{namehash}{ef4fc35f768edfa4968e93b8ad4cfc66}
+      \strng{fullhash}{ef4fc35f768edfa4968e93b8ad4cfc66}
+      \strng{bibnamehash}{ef4fc35f768edfa4968e93b8ad4cfc66}
+      \strng{authorbibnamehash}{ef4fc35f768edfa4968e93b8ad4cfc66}
+      \strng{authornamehash}{ef4fc35f768edfa4968e93b8ad4cfc66}
+      \strng{authorfullhash}{ef4fc35f768edfa4968e93b8ad4cfc66}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelprefix}{A}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We present a performance portable implementation of the Spectral Ewald method, employing shared memory and streaming parallelism to rapidly evaluate periodic two-body potentials in Stokes flow. The method splits dense particle evaluation into near-field and far-field components, where the near-field is singular and the far-field decays rapidly in Fourier space. Far-field interactions resemble a Nonuniform Fast Fourier Transform: source potentials are interpolated onto a uniform grid (p2g), an ndFFT is applied, Fourier potentials are scaled, an ndIFFT is applied, and the potentials are interpolated back (g2p). The p2g, g2p, and near-field (p2p) interactions use Kokkos hierarchical parallelism with scratch-pad memory and thread-vector range reductions.}
+      \field{howpublished}{High Performance Software Foundation Conference}
+      \field{month}{5}
+      \field{title}{Performance Portable Fast Ewald Summation}
+      \field{year}{2025}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://youtu.be/gZ2Pi5LSP6M?feature=shared
+      \endverb
+      \verb{url}
+      \verb https://youtu.be/gZ2Pi5LSP6M?feature=shared
+      \endverb
+      \keyw{talk}
+      \annotation{item}{author}{default}{1}{}{0}{highlight}
+    \endentry
+    \entry{genten_mttkrp}{unpublished}{}
+      \name{author}{3}{}{%
+        {{hash=ef4fc35f768edfa4968e93b8ad4cfc66}{%
+           family={Kosmacher},
+           familyi={K\bibinitperiod},
+           given={Gabriel},
+           giveni={G\bibinitperiod}}}%
+        {{hash=9974fe6e4cbf28b9f7519b9f1623aa8e}{%
+           family={Phipps},
+           familyi={P\bibinitperiod},
+           given={Eric\bibnamedelima T.},
+           giveni={E\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=7f4cf0a582bc91284f7989128691c046}{%
+           family={Rajamanickam},
+           familyi={R\bibinitperiod},
+           given={Sivasankaran},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{31b76f82b05fe3b7643ffd45414236fb}
+      \strng{fullhash}{31b76f82b05fe3b7643ffd45414236fb}
+      \strng{bibnamehash}{31b76f82b05fe3b7643ffd45414236fb}
+      \strng{authorbibnamehash}{31b76f82b05fe3b7643ffd45414236fb}
+      \strng{authornamehash}{31b76f82b05fe3b7643ffd45414236fb}
+      \strng{authorfullhash}{31b76f82b05fe3b7643ffd45414236fb}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelprefix}{A}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We extend the GenTen tensor decomposition package by introducing an accelerated dense matricized tensor times Khatri-Rao product (MTTKRP), the workhorse kernel for canonical polyadic (CP) tensor decompositions, that is portable and performant on modern CPU and GPU architectures. In contrast to the state-of-the-art matrix multiply based MTTKRP kernels used by Tensor Toolbox, TensorLy, etc., that explicitly form Khatri-Rao matrices, we develop a matrix-free element-wise parallelization approach whose memory cost grows with the rank R like the sum of the tensor shape O(R(n+m+k)), compared to matrix-based methods whose memory cost grows like the product of the tensor shape O(R(mnk)). For the largest problem we study, a rank 2000 MTTKRP, the smaller growth rate yields a matrix-free memory cost of just 2\% of the matrix-based methods, a 50x improvement. In practice, the reduced memory impact means our matrix-free MTTKRP can compute a rank 2000 tensor decomposition on a single NVIDIA H100 instead of six H100s using a matrix-based MTTKRP. We also compare our optimized matrix-free MTTKRP to baseline matrix-free implementations on different devices, showing a 3x single-device speedup on an Intel 8480+ CPU and an 11x speedup on a H100 GPU. In addition to numerical results, we provide fine grained performance models for an ideal multi-level cache machine, compare analytical performance predictions to empirical results, and provide a motivated heuristic selection for selecting an algorithmic hyperparameter.}
+      \field{eprintclass}{cs.MS}
+      \field{eprinttype}{arXiv}
+      \field{month}{10}
+      \field{title}{A Performance Portable Matrix Free Dense MTTKRP in GenTen}
+      \field{type}{preprint}
+      \field{year}{2025}
+      \true{nocite}
+      \verb{eprint}
+      \verb 2510.14891
+      \endverb
+      \verb{file}
+      \verb 2026273771.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2510.14891
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2510.14891
+      \endverb
+      \annotation{item}{author}{default}{1}{}{0}{highlight}
+    \endentry
+    \entry{Kosmacher_Shankari_2024}{article}{}
+      \name{author}{2}{}{%
+        {{hash=ef4fc35f768edfa4968e93b8ad4cfc66}{%
+           family={Kosmacher},
+           familyi={K\bibinitperiod},
+           given={Gabriel},
+           giveni={G\bibinitperiod}}}%
+        {{hash=a4cb1b2adbd64479d4709fda09780046}{%
+           family={Shankari},
+           familyi={S\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{6330403065caa3181fee640b194b528d}
+      \strng{fullhash}{6330403065caa3181fee640b194b528d}
+      \strng{bibnamehash}{6330403065caa3181fee640b194b528d}
+      \strng{authorbibnamehash}{6330403065caa3181fee640b194b528d}
+      \strng{authornamehash}{6330403065caa3181fee640b194b528d}
+      \strng{authorfullhash}{6330403065caa3181fee640b194b528d}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelprefix}{A}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Travel behavior changes are essential to transportation decarbonization. Travel diaries, consisting of sequences of trips between places, are typically used to instrument human travel behavior. However, these diaries are only as accurate as the underlying methods used to construct them. Travel diary algorithms have been a popular research topic since the advent of Global Positioning System (GPS) tracking surveys. These algorithms have typically been validated using prompted recall of presegmented trips, thus disregarding the continuity of mode inference. Phone operating systems have adopted battery-conserving techniques, but the resulting data collection errors have not been studied extensively. We introduce a framework to evaluate accuracy of trip length computations and mode inference by analyzing continuous mode-segmented trajectories for groups of trips. We then use the framework to identify the input data quality and the impact of postprocessing. Our primary inputs to this evaluation are MobilityNet, a public dataset containing information from three artificial timelines covering 15 different travel modes, and sample open-source travel diary creation algorithms from the OpenPATH project. Our framework concretely shows the variance of the distance error drops from (0.217, 0.0848) to (0.011, 0.0407) (Android, iOS) after postprocessing. Similarly, weighted F-scores for mode inference increase from (0.25, 0.29) to (0.60, 0.74) (iOS, Android) between random forest and Geographic Information Systems (GIS)-based models. We hope that this standardized method will be adapted to evaluate other, potentially proprietary, travel diary algorithms. The results can be used to understand and improve the state of the art in the travel diary creation field.}
+      \field{issn}{0361-1981, 2169-4052}
+      \field{journaltitle}{Transportation Research Record: Journal of the Transportation Research Board}
+      \field{month}{7}
+      \field{number}{7}
+      \field{title}{Evaluating the Interplay between Trajectory Segmentation and Mode Inference Error}
+      \field{volume}{2678}
+      \field{year}{2024}
+      \true{nocite}
+      \field{pages}{32\bibrangedash 49}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1177/03611981231208154
+      \endverb
+      \verb{file}
+      \verb trb_2023.pdf
+      \endverb
+      \annotation{item}{author}{default}{1}{}{0}{highlight}
+    \endentry
+    \entry{Du_Kosmacher_Liu_Massman_Palmer_Thieme_Wu_Zhang_2023}{article}{}
+      \name{author}{8}{}{%
+        {{hash=2574d6df17b717937de799574005bb14}{%
+           family={Du},
+           familyi={D\bibinitperiod},
+           given={Yu},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=ef4fc35f768edfa4968e93b8ad4cfc66}{%
+           family={Kosmacher},
+           familyi={K\bibinitperiod},
+           given={Gabriel},
+           giveni={G\bibinitperiod}}}%
+        {{hash=e50c58c4c229ee0bccdf32419618b5ea}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Yichen},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=006177ab1acd7669e1071425d30c47bd}{%
+           family={Massman},
+           familyi={M\bibinitperiod},
+           given={Jeff},
+           giveni={J\bibinitperiod}}}%
+        {{hash=52c08e0bddadb177a2de74bbf36f1ded}{%
+           family={Palmer},
+           familyi={P\bibinitperiod},
+           given={Joseph},
+           giveni={J\bibinitperiod}}}%
+        {{hash=661717b7aa8799c1646f119dab075a62}{%
+           family={Thieme},
+           familyi={T\bibinitperiod},
+           given={Timothy},
+           giveni={T\bibinitperiod}}}%
+        {{hash=ae2c50d6a4960a207b0248bd93c317b7}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Jerry},
+           giveni={J\bibinitperiod}}}%
+        {{hash=d5125369d00f1d79a8ad3d95f46a6e8d}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Zheyu},
+           giveni={Z\bibinitperiod}}}%
+      }
+      \list{publisher}{3}{%
+        {SIGMA. Symmetry, Integrability}%
+        {Geometry: Methods}%
+        {Applications}%
+      }
+      \strng{namehash}{3dbd3fa8f768c323df62360c3a867af0}
+      \strng{fullhash}{02b39008901b72234f39aa96a3c03cd7}
+      \strng{bibnamehash}{02b39008901b72234f39aa96a3c03cd7}
+      \strng{authorbibnamehash}{02b39008901b72234f39aa96a3c03cd7}
+      \strng{authornamehash}{3dbd3fa8f768c323df62360c3a867af0}
+      \strng{authorfullhash}{02b39008901b72234f39aa96a3c03cd7}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelprefix}{A}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Exploiting the relationship between 4-dimensional toric and semitoric integrable systems with Delzant and semitoric polygons, respectively, we develop techniques to compute certain equivariant packing densities and equivariant capacities of these systems by working exclusively with the polygons. This expands on results of Pelayo and Pelayo-Schmidt. We compute the densities of several important examples and we also use our techniques to solve the equivariant semitoric perfect packing problem, i.e., we list all semitoric polygons for which the associated semitoric system admits an equivariant packing which fills all but a set of measure zero of the manifold. This paper also serves as a concise and accessible introduction to Delzant and semitoric polygons in dimension four.}
+      \field{issn}{18150659}
+      \field{journaltitle}{SIGMA. Symmetry, Integrability and Geometry: Methods and Applications}
+      \field{month}{10}
+      \field{title}{Packing Densities of Delzant and Semitoric Polygons}
+      \field{volume}{19}
+      \field{year}{2023}
+      \true{nocite}
+      \field{pages}{081}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3842/SIGMA.2023.081
+      \endverb
+      \verb{file}
+      \verb sigma23-081.pdf
+      \endverb
+      \annotation{item}{author}{default}{2}{}{0}{highlight}
+    \endentry
+  \enddatalist
+  \datalist[entry]{ydnt/global/4BAEE84AF7A92177C9064DDC2FC010CE/global/global}
+    \entry{kosmacher2026performanceportablefastewald}{unpublished}{}
+      \name{author}{4}{}{%
+        {{hash=ef4fc35f768edfa4968e93b8ad4cfc66}{%
+           family={Kosmacher},
+           familyi={K\bibinitperiod},
+           given={Gabriel},
+           giveni={G\bibinitperiod}}}%
+        {{hash=838e9da4e45b83a870412ba358213a3d}{%
+           family={Du},
+           familyi={D\bibinitperiod},
+           given={Ziyu},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=e7aae78e35933cf67663e9efc80c8ef1}{%
+           family={Bagge},
+           familyi={B\bibinitperiod},
+           given={Joar},
+           giveni={J\bibinitperiod}}}%
+        {{hash=c666809dd286126d267d3807218186db}{%
+           family={Biros},
+           familyi={B\bibinitperiod},
+           given={George},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{f3fd6ad0c491f7f98b652c81fb066ac8}
+      \strng{fullhash}{34b9852546a50cc3d84511557c5809e9}
+      \strng{bibnamehash}{34b9852546a50cc3d84511557c5809e9}
+      \strng{authorbibnamehash}{34b9852546a50cc3d84511557c5809e9}
+      \strng{authornamehash}{f3fd6ad0c491f7f98b652c81fb066ac8}
+      \strng{authorfullhash}{34b9852546a50cc3d84511557c5809e9}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelprefix}{PP}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{math.NA}
+      \field{eprinttype}{arXiv}
+      \field{month}{6}
+      \field{title}{A performance portable fast Ewald summation for Stokes flow}
+      \field{year}{2026}
+      \true{nocite}
+      \verb{eprint}
+      \verb 2606.19059
+      \endverb
+      \verb{file}
+      \verb 2606.19059v1.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2606.19059
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2606.19059
+      \endverb
+      \annotation{item}{author}{default}{1}{}{0}{highlight}
+    \endentry
+    \entry{Kosmacher_Max_Rapti_Caceres_Stewart_Merrill_2026}{article}{}
+      \name{author}{5}{}{%
+        {{hash=ef4fc35f768edfa4968e93b8ad4cfc66}{%
+           family={Kosmacher},
+           familyi={K\bibinitperiod},
+           given={Gabriel},
+           giveni={G\bibinitperiod}}}%
+        {{hash=7c7db95f5f20a6835be0d10bea180c39}{%
+           family={Max},
+           familyi={M\bibinitperiod},
+           given={Dillon},
+           giveni={D\bibinitperiod}}}%
+        {{hash=d123f79bc61b48d727ce0d9f2b8a1165}{%
+           family={Rapti},
+           familyi={R\bibinitperiod},
+           given={Zoi},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=2c0fa347170698ce94ae09a62808b117}{%
+           family={Cáceres},
+           familyi={C\bibinitperiod},
+           given={Carla\bibnamedelima E.},
+           giveni={C\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=9ac6aceb09a5230fc59b52fb071cc0e7}{%
+           family={Stewart\bibnamedelima Merrill},
+           familyi={S\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={Tara\bibnamedelima E.},
+           giveni={T\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \strng{namehash}{0678c7830383e4ed59f2632a5fd181bc}
+      \strng{fullhash}{9de9303059ce3f4dd96a7cab934813df}
+      \strng{bibnamehash}{9de9303059ce3f4dd96a7cab934813df}
+      \strng{authorbibnamehash}{9de9303059ce3f4dd96a7cab934813df}
+      \strng{authornamehash}{0678c7830383e4ed59f2632a5fd181bc}
+      \strng{authorfullhash}{9de9303059ce3f4dd96a7cab934813df}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelprefix}{PP}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In both human and wildlife disease systems, temporal shifts in host immunity may shape the timing and severity of epidemics. Yet, immune responses, as well as seasonal patterns in their expression, are difficult to measure. Rather, field studies collect phenomenological data on infection outcomes. Pairing epidemic data of multiple outbreaks with models that directly parameterize immune metrics can be a powerful approach for exploring the role of time-varying immunity on disease. Field data can be used to determine how well a parameterized model can reproduce trends and differences observed among outbreaks.}
+      \field{issn}{1522-9602}
+      \field{journaltitle}{Bulletin of Mathematical Biology}
+      \field{month}{1}
+      \field{number}{2}
+      \field{title}{The Role of Host Immunity and the Environment in Seasonal Disease Dynamics}
+      \field{volume}{88}
+      \field{year}{2026}
+      \true{nocite}
+      \field{pages}{18}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1007/s11538-025-01582-3
+      \endverb
+      \verb{file}
+      \verb Seasonality_Manuscript_02172025.pdf
+      \endverb
+      \annotation{item}{author}{default}{1}{}{0}{highlight}
+    \endentry
+    \entry{HPSFcon25}{online}{}
+      \name{author}{1}{}{%
+        {{hash=ef4fc35f768edfa4968e93b8ad4cfc66}{%
+           family={Kosmacher},
+           familyi={K\bibinitperiod},
+           given={Gabriel},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Chicago, Illinois}%
+      }
+      \strng{namehash}{ef4fc35f768edfa4968e93b8ad4cfc66}
+      \strng{fullhash}{ef4fc35f768edfa4968e93b8ad4cfc66}
+      \strng{bibnamehash}{ef4fc35f768edfa4968e93b8ad4cfc66}
+      \strng{authorbibnamehash}{ef4fc35f768edfa4968e93b8ad4cfc66}
+      \strng{authornamehash}{ef4fc35f768edfa4968e93b8ad4cfc66}
+      \strng{authorfullhash}{ef4fc35f768edfa4968e93b8ad4cfc66}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelprefix}{PP}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We present a performance portable implementation of the Spectral Ewald method, employing shared memory and streaming parallelism to rapidly evaluate periodic two-body potentials in Stokes flow. The method splits dense particle evaluation into near-field and far-field components, where the near-field is singular and the far-field decays rapidly in Fourier space. Far-field interactions resemble a Nonuniform Fast Fourier Transform: source potentials are interpolated onto a uniform grid (p2g), an ndFFT is applied, Fourier potentials are scaled, an ndIFFT is applied, and the potentials are interpolated back (g2p). The p2g, g2p, and near-field (p2p) interactions use Kokkos hierarchical parallelism with scratch-pad memory and thread-vector range reductions.}
+      \field{howpublished}{High Performance Software Foundation Conference}
+      \field{month}{5}
+      \field{title}{Performance Portable Fast Ewald Summation}
+      \field{year}{2025}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://youtu.be/gZ2Pi5LSP6M?feature=shared
+      \endverb
+      \verb{url}
+      \verb https://youtu.be/gZ2Pi5LSP6M?feature=shared
+      \endverb
+      \keyw{talk}
+      \annotation{item}{author}{default}{1}{}{0}{highlight}
+    \endentry
+    \entry{genten_mttkrp}{unpublished}{}
+      \name{author}{3}{}{%
+        {{hash=ef4fc35f768edfa4968e93b8ad4cfc66}{%
+           family={Kosmacher},
+           familyi={K\bibinitperiod},
+           given={Gabriel},
+           giveni={G\bibinitperiod}}}%
+        {{hash=9974fe6e4cbf28b9f7519b9f1623aa8e}{%
+           family={Phipps},
+           familyi={P\bibinitperiod},
+           given={Eric\bibnamedelima T.},
+           giveni={E\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=7f4cf0a582bc91284f7989128691c046}{%
+           family={Rajamanickam},
+           familyi={R\bibinitperiod},
+           given={Sivasankaran},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{31b76f82b05fe3b7643ffd45414236fb}
+      \strng{fullhash}{31b76f82b05fe3b7643ffd45414236fb}
+      \strng{bibnamehash}{31b76f82b05fe3b7643ffd45414236fb}
+      \strng{authorbibnamehash}{31b76f82b05fe3b7643ffd45414236fb}
+      \strng{authornamehash}{31b76f82b05fe3b7643ffd45414236fb}
+      \strng{authorfullhash}{31b76f82b05fe3b7643ffd45414236fb}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelprefix}{PP}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We extend the GenTen tensor decomposition package by introducing an accelerated dense matricized tensor times Khatri-Rao product (MTTKRP), the workhorse kernel for canonical polyadic (CP) tensor decompositions, that is portable and performant on modern CPU and GPU architectures. In contrast to the state-of-the-art matrix multiply based MTTKRP kernels used by Tensor Toolbox, TensorLy, etc., that explicitly form Khatri-Rao matrices, we develop a matrix-free element-wise parallelization approach whose memory cost grows with the rank R like the sum of the tensor shape O(R(n+m+k)), compared to matrix-based methods whose memory cost grows like the product of the tensor shape O(R(mnk)). For the largest problem we study, a rank 2000 MTTKRP, the smaller growth rate yields a matrix-free memory cost of just 2\% of the matrix-based methods, a 50x improvement. In practice, the reduced memory impact means our matrix-free MTTKRP can compute a rank 2000 tensor decomposition on a single NVIDIA H100 instead of six H100s using a matrix-based MTTKRP. We also compare our optimized matrix-free MTTKRP to baseline matrix-free implementations on different devices, showing a 3x single-device speedup on an Intel 8480+ CPU and an 11x speedup on a H100 GPU. In addition to numerical results, we provide fine grained performance models for an ideal multi-level cache machine, compare analytical performance predictions to empirical results, and provide a motivated heuristic selection for selecting an algorithmic hyperparameter.}
+      \field{eprintclass}{cs.MS}
+      \field{eprinttype}{arXiv}
+      \field{month}{10}
+      \field{title}{A Performance Portable Matrix Free Dense MTTKRP in GenTen}
+      \field{type}{preprint}
+      \field{year}{2025}
+      \true{nocite}
+      \verb{eprint}
+      \verb 2510.14891
+      \endverb
+      \verb{file}
+      \verb 2026273771.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2510.14891
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2510.14891
+      \endverb
+      \annotation{item}{author}{default}{1}{}{0}{highlight}
+    \endentry
+    \entry{Kosmacher_Shankari_2024}{article}{}
+      \name{author}{2}{}{%
+        {{hash=ef4fc35f768edfa4968e93b8ad4cfc66}{%
+           family={Kosmacher},
+           familyi={K\bibinitperiod},
+           given={Gabriel},
+           giveni={G\bibinitperiod}}}%
+        {{hash=a4cb1b2adbd64479d4709fda09780046}{%
+           family={Shankari},
+           familyi={S\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{6330403065caa3181fee640b194b528d}
+      \strng{fullhash}{6330403065caa3181fee640b194b528d}
+      \strng{bibnamehash}{6330403065caa3181fee640b194b528d}
+      \strng{authorbibnamehash}{6330403065caa3181fee640b194b528d}
+      \strng{authornamehash}{6330403065caa3181fee640b194b528d}
+      \strng{authorfullhash}{6330403065caa3181fee640b194b528d}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelprefix}{PP}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Travel behavior changes are essential to transportation decarbonization. Travel diaries, consisting of sequences of trips between places, are typically used to instrument human travel behavior. However, these diaries are only as accurate as the underlying methods used to construct them. Travel diary algorithms have been a popular research topic since the advent of Global Positioning System (GPS) tracking surveys. These algorithms have typically been validated using prompted recall of presegmented trips, thus disregarding the continuity of mode inference. Phone operating systems have adopted battery-conserving techniques, but the resulting data collection errors have not been studied extensively. We introduce a framework to evaluate accuracy of trip length computations and mode inference by analyzing continuous mode-segmented trajectories for groups of trips. We then use the framework to identify the input data quality and the impact of postprocessing. Our primary inputs to this evaluation are MobilityNet, a public dataset containing information from three artificial timelines covering 15 different travel modes, and sample open-source travel diary creation algorithms from the OpenPATH project. Our framework concretely shows the variance of the distance error drops from (0.217, 0.0848) to (0.011, 0.0407) (Android, iOS) after postprocessing. Similarly, weighted F-scores for mode inference increase from (0.25, 0.29) to (0.60, 0.74) (iOS, Android) between random forest and Geographic Information Systems (GIS)-based models. We hope that this standardized method will be adapted to evaluate other, potentially proprietary, travel diary algorithms. The results can be used to understand and improve the state of the art in the travel diary creation field.}
+      \field{issn}{0361-1981, 2169-4052}
+      \field{journaltitle}{Transportation Research Record: Journal of the Transportation Research Board}
+      \field{month}{7}
+      \field{number}{7}
+      \field{title}{Evaluating the Interplay between Trajectory Segmentation and Mode Inference Error}
+      \field{volume}{2678}
+      \field{year}{2024}
+      \true{nocite}
+      \field{pages}{32\bibrangedash 49}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1177/03611981231208154
+      \endverb
+      \verb{file}
+      \verb trb_2023.pdf
+      \endverb
+      \annotation{item}{author}{default}{1}{}{0}{highlight}
+    \endentry
+    \entry{Du_Kosmacher_Liu_Massman_Palmer_Thieme_Wu_Zhang_2023}{article}{}
+      \name{author}{8}{}{%
+        {{hash=2574d6df17b717937de799574005bb14}{%
+           family={Du},
+           familyi={D\bibinitperiod},
+           given={Yu},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=ef4fc35f768edfa4968e93b8ad4cfc66}{%
+           family={Kosmacher},
+           familyi={K\bibinitperiod},
+           given={Gabriel},
+           giveni={G\bibinitperiod}}}%
+        {{hash=e50c58c4c229ee0bccdf32419618b5ea}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Yichen},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=006177ab1acd7669e1071425d30c47bd}{%
+           family={Massman},
+           familyi={M\bibinitperiod},
+           given={Jeff},
+           giveni={J\bibinitperiod}}}%
+        {{hash=52c08e0bddadb177a2de74bbf36f1ded}{%
+           family={Palmer},
+           familyi={P\bibinitperiod},
+           given={Joseph},
+           giveni={J\bibinitperiod}}}%
+        {{hash=661717b7aa8799c1646f119dab075a62}{%
+           family={Thieme},
+           familyi={T\bibinitperiod},
+           given={Timothy},
+           giveni={T\bibinitperiod}}}%
+        {{hash=ae2c50d6a4960a207b0248bd93c317b7}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Jerry},
+           giveni={J\bibinitperiod}}}%
+        {{hash=d5125369d00f1d79a8ad3d95f46a6e8d}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Zheyu},
+           giveni={Z\bibinitperiod}}}%
+      }
+      \list{publisher}{3}{%
+        {SIGMA. Symmetry, Integrability}%
+        {Geometry: Methods}%
+        {Applications}%
+      }
+      \strng{namehash}{3dbd3fa8f768c323df62360c3a867af0}
+      \strng{fullhash}{02b39008901b72234f39aa96a3c03cd7}
+      \strng{bibnamehash}{02b39008901b72234f39aa96a3c03cd7}
+      \strng{authorbibnamehash}{02b39008901b72234f39aa96a3c03cd7}
+      \strng{authornamehash}{3dbd3fa8f768c323df62360c3a867af0}
+      \strng{authorfullhash}{02b39008901b72234f39aa96a3c03cd7}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelprefix}{PP}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Exploiting the relationship between 4-dimensional toric and semitoric integrable systems with Delzant and semitoric polygons, respectively, we develop techniques to compute certain equivariant packing densities and equivariant capacities of these systems by working exclusively with the polygons. This expands on results of Pelayo and Pelayo-Schmidt. We compute the densities of several important examples and we also use our techniques to solve the equivariant semitoric perfect packing problem, i.e., we list all semitoric polygons for which the associated semitoric system admits an equivariant packing which fills all but a set of measure zero of the manifold. This paper also serves as a concise and accessible introduction to Delzant and semitoric polygons in dimension four.}
+      \field{issn}{18150659}
+      \field{journaltitle}{SIGMA. Symmetry, Integrability and Geometry: Methods and Applications}
+      \field{month}{10}
+      \field{title}{Packing Densities of Delzant and Semitoric Polygons}
+      \field{volume}{19}
+      \field{year}{2023}
+      \true{nocite}
+      \field{pages}{081}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3842/SIGMA.2023.081
+      \endverb
+      \verb{file}
+      \verb sigma23-081.pdf
+      \endverb
+      \annotation{item}{author}{default}{2}{}{0}{highlight}
+    \endentry
+  \enddatalist
+  \datalist[entry]{ydnt/global/B9ECE18C950AFBFA6B0FDBFA4FF731D3/global/global}
+    \entry{kosmacher2026performanceportablefastewald}{unpublished}{}
+      \name{author}{4}{}{%
+        {{hash=ef4fc35f768edfa4968e93b8ad4cfc66}{%
+           family={Kosmacher},
+           familyi={K\bibinitperiod},
+           given={Gabriel},
+           giveni={G\bibinitperiod}}}%
+        {{hash=838e9da4e45b83a870412ba358213a3d}{%
+           family={Du},
+           familyi={D\bibinitperiod},
+           given={Ziyu},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=e7aae78e35933cf67663e9efc80c8ef1}{%
+           family={Bagge},
+           familyi={B\bibinitperiod},
+           given={Joar},
+           giveni={J\bibinitperiod}}}%
+        {{hash=c666809dd286126d267d3807218186db}{%
+           family={Biros},
+           familyi={B\bibinitperiod},
+           given={George},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{f3fd6ad0c491f7f98b652c81fb066ac8}
+      \strng{fullhash}{34b9852546a50cc3d84511557c5809e9}
+      \strng{bibnamehash}{34b9852546a50cc3d84511557c5809e9}
+      \strng{authorbibnamehash}{34b9852546a50cc3d84511557c5809e9}
+      \strng{authornamehash}{f3fd6ad0c491f7f98b652c81fb066ac8}
+      \strng{authorfullhash}{34b9852546a50cc3d84511557c5809e9}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelprefix}{T}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{math.NA}
+      \field{eprinttype}{arXiv}
+      \field{month}{6}
+      \field{title}{A performance portable fast Ewald summation for Stokes flow}
+      \field{year}{2026}
+      \true{nocite}
+      \verb{eprint}
+      \verb 2606.19059
+      \endverb
+      \verb{file}
+      \verb 2606.19059v1.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2606.19059
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2606.19059
+      \endverb
+      \annotation{item}{author}{default}{1}{}{0}{highlight}
+    \endentry
+    \entry{Kosmacher_Max_Rapti_Caceres_Stewart_Merrill_2026}{article}{}
+      \name{author}{5}{}{%
+        {{hash=ef4fc35f768edfa4968e93b8ad4cfc66}{%
+           family={Kosmacher},
+           familyi={K\bibinitperiod},
+           given={Gabriel},
+           giveni={G\bibinitperiod}}}%
+        {{hash=7c7db95f5f20a6835be0d10bea180c39}{%
+           family={Max},
+           familyi={M\bibinitperiod},
+           given={Dillon},
+           giveni={D\bibinitperiod}}}%
+        {{hash=d123f79bc61b48d727ce0d9f2b8a1165}{%
+           family={Rapti},
+           familyi={R\bibinitperiod},
+           given={Zoi},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=2c0fa347170698ce94ae09a62808b117}{%
+           family={Cáceres},
+           familyi={C\bibinitperiod},
+           given={Carla\bibnamedelima E.},
+           giveni={C\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=9ac6aceb09a5230fc59b52fb071cc0e7}{%
+           family={Stewart\bibnamedelima Merrill},
+           familyi={S\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={Tara\bibnamedelima E.},
+           giveni={T\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \strng{namehash}{0678c7830383e4ed59f2632a5fd181bc}
+      \strng{fullhash}{9de9303059ce3f4dd96a7cab934813df}
+      \strng{bibnamehash}{9de9303059ce3f4dd96a7cab934813df}
+      \strng{authorbibnamehash}{9de9303059ce3f4dd96a7cab934813df}
+      \strng{authornamehash}{0678c7830383e4ed59f2632a5fd181bc}
+      \strng{authorfullhash}{9de9303059ce3f4dd96a7cab934813df}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelprefix}{T}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In both human and wildlife disease systems, temporal shifts in host immunity may shape the timing and severity of epidemics. Yet, immune responses, as well as seasonal patterns in their expression, are difficult to measure. Rather, field studies collect phenomenological data on infection outcomes. Pairing epidemic data of multiple outbreaks with models that directly parameterize immune metrics can be a powerful approach for exploring the role of time-varying immunity on disease. Field data can be used to determine how well a parameterized model can reproduce trends and differences observed among outbreaks.}
+      \field{issn}{1522-9602}
+      \field{journaltitle}{Bulletin of Mathematical Biology}
+      \field{month}{1}
+      \field{number}{2}
+      \field{title}{The Role of Host Immunity and the Environment in Seasonal Disease Dynamics}
+      \field{volume}{88}
+      \field{year}{2026}
+      \true{nocite}
+      \field{pages}{18}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1007/s11538-025-01582-3
+      \endverb
+      \verb{file}
+      \verb Seasonality_Manuscript_02172025.pdf
+      \endverb
+      \annotation{item}{author}{default}{1}{}{0}{highlight}
+    \endentry
+    \entry{HPSFcon25}{online}{}
+      \name{author}{1}{}{%
+        {{hash=ef4fc35f768edfa4968e93b8ad4cfc66}{%
+           family={Kosmacher},
+           familyi={K\bibinitperiod},
+           given={Gabriel},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Chicago, Illinois}%
+      }
+      \strng{namehash}{ef4fc35f768edfa4968e93b8ad4cfc66}
+      \strng{fullhash}{ef4fc35f768edfa4968e93b8ad4cfc66}
+      \strng{bibnamehash}{ef4fc35f768edfa4968e93b8ad4cfc66}
+      \strng{authorbibnamehash}{ef4fc35f768edfa4968e93b8ad4cfc66}
+      \strng{authornamehash}{ef4fc35f768edfa4968e93b8ad4cfc66}
+      \strng{authorfullhash}{ef4fc35f768edfa4968e93b8ad4cfc66}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelprefix}{T}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We present a performance portable implementation of the Spectral Ewald method, employing shared memory and streaming parallelism to rapidly evaluate periodic two-body potentials in Stokes flow. The method splits dense particle evaluation into near-field and far-field components, where the near-field is singular and the far-field decays rapidly in Fourier space. Far-field interactions resemble a Nonuniform Fast Fourier Transform: source potentials are interpolated onto a uniform grid (p2g), an ndFFT is applied, Fourier potentials are scaled, an ndIFFT is applied, and the potentials are interpolated back (g2p). The p2g, g2p, and near-field (p2p) interactions use Kokkos hierarchical parallelism with scratch-pad memory and thread-vector range reductions.}
+      \field{howpublished}{High Performance Software Foundation Conference}
+      \field{month}{5}
+      \field{title}{Performance Portable Fast Ewald Summation}
+      \field{year}{2025}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://youtu.be/gZ2Pi5LSP6M?feature=shared
+      \endverb
+      \verb{url}
+      \verb https://youtu.be/gZ2Pi5LSP6M?feature=shared
+      \endverb
+      \keyw{talk}
+      \annotation{item}{author}{default}{1}{}{0}{highlight}
+    \endentry
+    \entry{genten_mttkrp}{unpublished}{}
+      \name{author}{3}{}{%
+        {{hash=ef4fc35f768edfa4968e93b8ad4cfc66}{%
+           family={Kosmacher},
+           familyi={K\bibinitperiod},
+           given={Gabriel},
+           giveni={G\bibinitperiod}}}%
+        {{hash=9974fe6e4cbf28b9f7519b9f1623aa8e}{%
+           family={Phipps},
+           familyi={P\bibinitperiod},
+           given={Eric\bibnamedelima T.},
+           giveni={E\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=7f4cf0a582bc91284f7989128691c046}{%
+           family={Rajamanickam},
+           familyi={R\bibinitperiod},
+           given={Sivasankaran},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{31b76f82b05fe3b7643ffd45414236fb}
+      \strng{fullhash}{31b76f82b05fe3b7643ffd45414236fb}
+      \strng{bibnamehash}{31b76f82b05fe3b7643ffd45414236fb}
+      \strng{authorbibnamehash}{31b76f82b05fe3b7643ffd45414236fb}
+      \strng{authornamehash}{31b76f82b05fe3b7643ffd45414236fb}
+      \strng{authorfullhash}{31b76f82b05fe3b7643ffd45414236fb}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelprefix}{T}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We extend the GenTen tensor decomposition package by introducing an accelerated dense matricized tensor times Khatri-Rao product (MTTKRP), the workhorse kernel for canonical polyadic (CP) tensor decompositions, that is portable and performant on modern CPU and GPU architectures. In contrast to the state-of-the-art matrix multiply based MTTKRP kernels used by Tensor Toolbox, TensorLy, etc., that explicitly form Khatri-Rao matrices, we develop a matrix-free element-wise parallelization approach whose memory cost grows with the rank R like the sum of the tensor shape O(R(n+m+k)), compared to matrix-based methods whose memory cost grows like the product of the tensor shape O(R(mnk)). For the largest problem we study, a rank 2000 MTTKRP, the smaller growth rate yields a matrix-free memory cost of just 2\% of the matrix-based methods, a 50x improvement. In practice, the reduced memory impact means our matrix-free MTTKRP can compute a rank 2000 tensor decomposition on a single NVIDIA H100 instead of six H100s using a matrix-based MTTKRP. We also compare our optimized matrix-free MTTKRP to baseline matrix-free implementations on different devices, showing a 3x single-device speedup on an Intel 8480+ CPU and an 11x speedup on a H100 GPU. In addition to numerical results, we provide fine grained performance models for an ideal multi-level cache machine, compare analytical performance predictions to empirical results, and provide a motivated heuristic selection for selecting an algorithmic hyperparameter.}
+      \field{eprintclass}{cs.MS}
+      \field{eprinttype}{arXiv}
+      \field{month}{10}
+      \field{title}{A Performance Portable Matrix Free Dense MTTKRP in GenTen}
+      \field{type}{preprint}
+      \field{year}{2025}
+      \true{nocite}
+      \verb{eprint}
+      \verb 2510.14891
+      \endverb
+      \verb{file}
+      \verb 2026273771.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2510.14891
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2510.14891
+      \endverb
+      \annotation{item}{author}{default}{1}{}{0}{highlight}
+    \endentry
+    \entry{Kosmacher_Shankari_2024}{article}{}
+      \name{author}{2}{}{%
+        {{hash=ef4fc35f768edfa4968e93b8ad4cfc66}{%
+           family={Kosmacher},
+           familyi={K\bibinitperiod},
+           given={Gabriel},
+           giveni={G\bibinitperiod}}}%
+        {{hash=a4cb1b2adbd64479d4709fda09780046}{%
+           family={Shankari},
+           familyi={S\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{6330403065caa3181fee640b194b528d}
+      \strng{fullhash}{6330403065caa3181fee640b194b528d}
+      \strng{bibnamehash}{6330403065caa3181fee640b194b528d}
+      \strng{authorbibnamehash}{6330403065caa3181fee640b194b528d}
+      \strng{authornamehash}{6330403065caa3181fee640b194b528d}
+      \strng{authorfullhash}{6330403065caa3181fee640b194b528d}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelprefix}{T}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Travel behavior changes are essential to transportation decarbonization. Travel diaries, consisting of sequences of trips between places, are typically used to instrument human travel behavior. However, these diaries are only as accurate as the underlying methods used to construct them. Travel diary algorithms have been a popular research topic since the advent of Global Positioning System (GPS) tracking surveys. These algorithms have typically been validated using prompted recall of presegmented trips, thus disregarding the continuity of mode inference. Phone operating systems have adopted battery-conserving techniques, but the resulting data collection errors have not been studied extensively. We introduce a framework to evaluate accuracy of trip length computations and mode inference by analyzing continuous mode-segmented trajectories for groups of trips. We then use the framework to identify the input data quality and the impact of postprocessing. Our primary inputs to this evaluation are MobilityNet, a public dataset containing information from three artificial timelines covering 15 different travel modes, and sample open-source travel diary creation algorithms from the OpenPATH project. Our framework concretely shows the variance of the distance error drops from (0.217, 0.0848) to (0.011, 0.0407) (Android, iOS) after postprocessing. Similarly, weighted F-scores for mode inference increase from (0.25, 0.29) to (0.60, 0.74) (iOS, Android) between random forest and Geographic Information Systems (GIS)-based models. We hope that this standardized method will be adapted to evaluate other, potentially proprietary, travel diary algorithms. The results can be used to understand and improve the state of the art in the travel diary creation field.}
+      \field{issn}{0361-1981, 2169-4052}
+      \field{journaltitle}{Transportation Research Record: Journal of the Transportation Research Board}
+      \field{month}{7}
+      \field{number}{7}
+      \field{title}{Evaluating the Interplay between Trajectory Segmentation and Mode Inference Error}
+      \field{volume}{2678}
+      \field{year}{2024}
+      \true{nocite}
+      \field{pages}{32\bibrangedash 49}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1177/03611981231208154
+      \endverb
+      \verb{file}
+      \verb trb_2023.pdf
+      \endverb
+      \annotation{item}{author}{default}{1}{}{0}{highlight}
+    \endentry
+    \entry{Du_Kosmacher_Liu_Massman_Palmer_Thieme_Wu_Zhang_2023}{article}{}
+      \name{author}{8}{}{%
+        {{hash=2574d6df17b717937de799574005bb14}{%
+           family={Du},
+           familyi={D\bibinitperiod},
+           given={Yu},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=ef4fc35f768edfa4968e93b8ad4cfc66}{%
+           family={Kosmacher},
+           familyi={K\bibinitperiod},
+           given={Gabriel},
+           giveni={G\bibinitperiod}}}%
+        {{hash=e50c58c4c229ee0bccdf32419618b5ea}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Yichen},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=006177ab1acd7669e1071425d30c47bd}{%
+           family={Massman},
+           familyi={M\bibinitperiod},
+           given={Jeff},
+           giveni={J\bibinitperiod}}}%
+        {{hash=52c08e0bddadb177a2de74bbf36f1ded}{%
+           family={Palmer},
+           familyi={P\bibinitperiod},
+           given={Joseph},
+           giveni={J\bibinitperiod}}}%
+        {{hash=661717b7aa8799c1646f119dab075a62}{%
+           family={Thieme},
+           familyi={T\bibinitperiod},
+           given={Timothy},
+           giveni={T\bibinitperiod}}}%
+        {{hash=ae2c50d6a4960a207b0248bd93c317b7}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Jerry},
+           giveni={J\bibinitperiod}}}%
+        {{hash=d5125369d00f1d79a8ad3d95f46a6e8d}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Zheyu},
+           giveni={Z\bibinitperiod}}}%
+      }
+      \list{publisher}{3}{%
+        {SIGMA. Symmetry, Integrability}%
+        {Geometry: Methods}%
+        {Applications}%
+      }
+      \strng{namehash}{3dbd3fa8f768c323df62360c3a867af0}
+      \strng{fullhash}{02b39008901b72234f39aa96a3c03cd7}
+      \strng{bibnamehash}{02b39008901b72234f39aa96a3c03cd7}
+      \strng{authorbibnamehash}{02b39008901b72234f39aa96a3c03cd7}
+      \strng{authornamehash}{3dbd3fa8f768c323df62360c3a867af0}
+      \strng{authorfullhash}{02b39008901b72234f39aa96a3c03cd7}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelprefix}{T}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Exploiting the relationship between 4-dimensional toric and semitoric integrable systems with Delzant and semitoric polygons, respectively, we develop techniques to compute certain equivariant packing densities and equivariant capacities of these systems by working exclusively with the polygons. This expands on results of Pelayo and Pelayo-Schmidt. We compute the densities of several important examples and we also use our techniques to solve the equivariant semitoric perfect packing problem, i.e., we list all semitoric polygons for which the associated semitoric system admits an equivariant packing which fills all but a set of measure zero of the manifold. This paper also serves as a concise and accessible introduction to Delzant and semitoric polygons in dimension four.}
+      \field{issn}{18150659}
+      \field{journaltitle}{SIGMA. Symmetry, Integrability and Geometry: Methods and Applications}
+      \field{month}{10}
+      \field{title}{Packing Densities of Delzant and Semitoric Polygons}
+      \field{volume}{19}
+      \field{year}{2023}
+      \true{nocite}
+      \field{pages}{081}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3842/SIGMA.2023.081
+      \endverb
+      \verb{file}
+      \verb sigma23-081.pdf
+      \endverb
+      \annotation{item}{author}{default}{2}{}{0}{highlight}
+    \endentry
+  \enddatalist
+  \datalist[entry]{ydnt/global//global/global}
+    \entry{kosmacher2026performanceportablefastewald}{unpublished}{}
+      \name{author}{4}{}{%
+        {{hash=ef4fc35f768edfa4968e93b8ad4cfc66}{%
+           family={Kosmacher},
+           familyi={K\bibinitperiod},
+           given={Gabriel},
+           giveni={G\bibinitperiod}}}%
+        {{hash=838e9da4e45b83a870412ba358213a3d}{%
+           family={Du},
+           familyi={D\bibinitperiod},
+           given={Ziyu},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=e7aae78e35933cf67663e9efc80c8ef1}{%
+           family={Bagge},
+           familyi={B\bibinitperiod},
+           given={Joar},
+           giveni={J\bibinitperiod}}}%
+        {{hash=c666809dd286126d267d3807218186db}{%
+           family={Biros},
+           familyi={B\bibinitperiod},
+           given={George},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{f3fd6ad0c491f7f98b652c81fb066ac8}
+      \strng{fullhash}{34b9852546a50cc3d84511557c5809e9}
+      \strng{bibnamehash}{34b9852546a50cc3d84511557c5809e9}
+      \strng{authorbibnamehash}{34b9852546a50cc3d84511557c5809e9}
+      \strng{authornamehash}{f3fd6ad0c491f7f98b652c81fb066ac8}
+      \strng{authorfullhash}{34b9852546a50cc3d84511557c5809e9}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{math.NA}
+      \field{eprinttype}{arXiv}
+      \field{month}{6}
+      \field{title}{A performance portable fast Ewald summation for Stokes flow}
+      \field{year}{2026}
+      \true{nocite}
+      \verb{eprint}
+      \verb 2606.19059
+      \endverb
+      \verb{file}
+      \verb 2606.19059v1.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2606.19059
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2606.19059
+      \endverb
+      \annotation{item}{author}{default}{1}{}{0}{highlight}
+    \endentry
+    \entry{Kosmacher_Max_Rapti_Caceres_Stewart_Merrill_2026}{article}{}
+      \name{author}{5}{}{%
+        {{hash=ef4fc35f768edfa4968e93b8ad4cfc66}{%
+           family={Kosmacher},
+           familyi={K\bibinitperiod},
+           given={Gabriel},
+           giveni={G\bibinitperiod}}}%
+        {{hash=7c7db95f5f20a6835be0d10bea180c39}{%
+           family={Max},
+           familyi={M\bibinitperiod},
+           given={Dillon},
+           giveni={D\bibinitperiod}}}%
+        {{hash=d123f79bc61b48d727ce0d9f2b8a1165}{%
+           family={Rapti},
+           familyi={R\bibinitperiod},
+           given={Zoi},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=2c0fa347170698ce94ae09a62808b117}{%
+           family={Cáceres},
+           familyi={C\bibinitperiod},
+           given={Carla\bibnamedelima E.},
+           giveni={C\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=9ac6aceb09a5230fc59b52fb071cc0e7}{%
+           family={Stewart\bibnamedelima Merrill},
+           familyi={S\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={Tara\bibnamedelima E.},
+           giveni={T\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \strng{namehash}{0678c7830383e4ed59f2632a5fd181bc}
+      \strng{fullhash}{9de9303059ce3f4dd96a7cab934813df}
+      \strng{bibnamehash}{9de9303059ce3f4dd96a7cab934813df}
+      \strng{authorbibnamehash}{9de9303059ce3f4dd96a7cab934813df}
+      \strng{authornamehash}{0678c7830383e4ed59f2632a5fd181bc}
+      \strng{authorfullhash}{9de9303059ce3f4dd96a7cab934813df}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In both human and wildlife disease systems, temporal shifts in host immunity may shape the timing and severity of epidemics. Yet, immune responses, as well as seasonal patterns in their expression, are difficult to measure. Rather, field studies collect phenomenological data on infection outcomes. Pairing epidemic data of multiple outbreaks with models that directly parameterize immune metrics can be a powerful approach for exploring the role of time-varying immunity on disease. Field data can be used to determine how well a parameterized model can reproduce trends and differences observed among outbreaks.}
+      \field{issn}{1522-9602}
+      \field{journaltitle}{Bulletin of Mathematical Biology}
+      \field{month}{1}
+      \field{number}{2}
+      \field{title}{The Role of Host Immunity and the Environment in Seasonal Disease Dynamics}
+      \field{volume}{88}
+      \field{year}{2026}
+      \true{nocite}
+      \field{pages}{18}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1007/s11538-025-01582-3
+      \endverb
+      \verb{file}
+      \verb Seasonality_Manuscript_02172025.pdf
+      \endverb
+      \annotation{item}{author}{default}{1}{}{0}{highlight}
+    \endentry
+    \entry{HPSFcon25}{online}{}
+      \name{author}{1}{}{%
+        {{hash=ef4fc35f768edfa4968e93b8ad4cfc66}{%
+           family={Kosmacher},
+           familyi={K\bibinitperiod},
+           given={Gabriel},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Chicago, Illinois}%
+      }
+      \strng{namehash}{ef4fc35f768edfa4968e93b8ad4cfc66}
+      \strng{fullhash}{ef4fc35f768edfa4968e93b8ad4cfc66}
+      \strng{bibnamehash}{ef4fc35f768edfa4968e93b8ad4cfc66}
+      \strng{authorbibnamehash}{ef4fc35f768edfa4968e93b8ad4cfc66}
+      \strng{authornamehash}{ef4fc35f768edfa4968e93b8ad4cfc66}
+      \strng{authorfullhash}{ef4fc35f768edfa4968e93b8ad4cfc66}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We present a performance portable implementation of the Spectral Ewald method, employing shared memory and streaming parallelism to rapidly evaluate periodic two-body potentials in Stokes flow. The method splits dense particle evaluation into near-field and far-field components, where the near-field is singular and the far-field decays rapidly in Fourier space. Far-field interactions resemble a Nonuniform Fast Fourier Transform: source potentials are interpolated onto a uniform grid (p2g), an ndFFT is applied, Fourier potentials are scaled, an ndIFFT is applied, and the potentials are interpolated back (g2p). The p2g, g2p, and near-field (p2p) interactions use Kokkos hierarchical parallelism with scratch-pad memory and thread-vector range reductions.}
+      \field{howpublished}{High Performance Software Foundation Conference}
+      \field{month}{5}
+      \field{title}{Performance Portable Fast Ewald Summation}
+      \field{year}{2025}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://youtu.be/gZ2Pi5LSP6M?feature=shared
+      \endverb
+      \verb{url}
+      \verb https://youtu.be/gZ2Pi5LSP6M?feature=shared
+      \endverb
+      \keyw{talk}
+      \annotation{item}{author}{default}{1}{}{0}{highlight}
+    \endentry
+    \entry{genten_mttkrp}{unpublished}{}
+      \name{author}{3}{}{%
+        {{hash=ef4fc35f768edfa4968e93b8ad4cfc66}{%
+           family={Kosmacher},
+           familyi={K\bibinitperiod},
+           given={Gabriel},
+           giveni={G\bibinitperiod}}}%
+        {{hash=9974fe6e4cbf28b9f7519b9f1623aa8e}{%
+           family={Phipps},
+           familyi={P\bibinitperiod},
+           given={Eric\bibnamedelima T.},
+           giveni={E\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=7f4cf0a582bc91284f7989128691c046}{%
+           family={Rajamanickam},
+           familyi={R\bibinitperiod},
+           given={Sivasankaran},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{31b76f82b05fe3b7643ffd45414236fb}
+      \strng{fullhash}{31b76f82b05fe3b7643ffd45414236fb}
+      \strng{bibnamehash}{31b76f82b05fe3b7643ffd45414236fb}
+      \strng{authorbibnamehash}{31b76f82b05fe3b7643ffd45414236fb}
+      \strng{authornamehash}{31b76f82b05fe3b7643ffd45414236fb}
+      \strng{authorfullhash}{31b76f82b05fe3b7643ffd45414236fb}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We extend the GenTen tensor decomposition package by introducing an accelerated dense matricized tensor times Khatri-Rao product (MTTKRP), the workhorse kernel for canonical polyadic (CP) tensor decompositions, that is portable and performant on modern CPU and GPU architectures. In contrast to the state-of-the-art matrix multiply based MTTKRP kernels used by Tensor Toolbox, TensorLy, etc., that explicitly form Khatri-Rao matrices, we develop a matrix-free element-wise parallelization approach whose memory cost grows with the rank R like the sum of the tensor shape O(R(n+m+k)), compared to matrix-based methods whose memory cost grows like the product of the tensor shape O(R(mnk)). For the largest problem we study, a rank 2000 MTTKRP, the smaller growth rate yields a matrix-free memory cost of just 2\% of the matrix-based methods, a 50x improvement. In practice, the reduced memory impact means our matrix-free MTTKRP can compute a rank 2000 tensor decomposition on a single NVIDIA H100 instead of six H100s using a matrix-based MTTKRP. We also compare our optimized matrix-free MTTKRP to baseline matrix-free implementations on different devices, showing a 3x single-device speedup on an Intel 8480+ CPU and an 11x speedup on a H100 GPU. In addition to numerical results, we provide fine grained performance models for an ideal multi-level cache machine, compare analytical performance predictions to empirical results, and provide a motivated heuristic selection for selecting an algorithmic hyperparameter.}
+      \field{eprintclass}{cs.MS}
+      \field{eprinttype}{arXiv}
+      \field{month}{10}
+      \field{title}{A Performance Portable Matrix Free Dense MTTKRP in GenTen}
+      \field{type}{preprint}
+      \field{year}{2025}
+      \true{nocite}
+      \verb{eprint}
+      \verb 2510.14891
+      \endverb
+      \verb{file}
+      \verb 2026273771.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2510.14891
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2510.14891
+      \endverb
+      \annotation{item}{author}{default}{1}{}{0}{highlight}
+    \endentry
+    \entry{Kosmacher_Shankari_2024}{article}{}
+      \name{author}{2}{}{%
+        {{hash=ef4fc35f768edfa4968e93b8ad4cfc66}{%
+           family={Kosmacher},
+           familyi={K\bibinitperiod},
+           given={Gabriel},
+           giveni={G\bibinitperiod}}}%
+        {{hash=a4cb1b2adbd64479d4709fda09780046}{%
+           family={Shankari},
+           familyi={S\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{6330403065caa3181fee640b194b528d}
+      \strng{fullhash}{6330403065caa3181fee640b194b528d}
+      \strng{bibnamehash}{6330403065caa3181fee640b194b528d}
+      \strng{authorbibnamehash}{6330403065caa3181fee640b194b528d}
+      \strng{authornamehash}{6330403065caa3181fee640b194b528d}
+      \strng{authorfullhash}{6330403065caa3181fee640b194b528d}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Travel behavior changes are essential to transportation decarbonization. Travel diaries, consisting of sequences of trips between places, are typically used to instrument human travel behavior. However, these diaries are only as accurate as the underlying methods used to construct them. Travel diary algorithms have been a popular research topic since the advent of Global Positioning System (GPS) tracking surveys. These algorithms have typically been validated using prompted recall of presegmented trips, thus disregarding the continuity of mode inference. Phone operating systems have adopted battery-conserving techniques, but the resulting data collection errors have not been studied extensively. We introduce a framework to evaluate accuracy of trip length computations and mode inference by analyzing continuous mode-segmented trajectories for groups of trips. We then use the framework to identify the input data quality and the impact of postprocessing. Our primary inputs to this evaluation are MobilityNet, a public dataset containing information from three artificial timelines covering 15 different travel modes, and sample open-source travel diary creation algorithms from the OpenPATH project. Our framework concretely shows the variance of the distance error drops from (0.217, 0.0848) to (0.011, 0.0407) (Android, iOS) after postprocessing. Similarly, weighted F-scores for mode inference increase from (0.25, 0.29) to (0.60, 0.74) (iOS, Android) between random forest and Geographic Information Systems (GIS)-based models. We hope that this standardized method will be adapted to evaluate other, potentially proprietary, travel diary algorithms. The results can be used to understand and improve the state of the art in the travel diary creation field.}
+      \field{issn}{0361-1981, 2169-4052}
+      \field{journaltitle}{Transportation Research Record: Journal of the Transportation Research Board}
+      \field{month}{7}
+      \field{number}{7}
+      \field{title}{Evaluating the Interplay between Trajectory Segmentation and Mode Inference Error}
+      \field{volume}{2678}
+      \field{year}{2024}
+      \true{nocite}
+      \field{pages}{32\bibrangedash 49}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1177/03611981231208154
+      \endverb
+      \verb{file}
+      \verb trb_2023.pdf
+      \endverb
+      \annotation{item}{author}{default}{1}{}{0}{highlight}
+    \endentry
+    \entry{Du_Kosmacher_Liu_Massman_Palmer_Thieme_Wu_Zhang_2023}{article}{}
+      \name{author}{8}{}{%
+        {{hash=2574d6df17b717937de799574005bb14}{%
+           family={Du},
+           familyi={D\bibinitperiod},
+           given={Yu},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=ef4fc35f768edfa4968e93b8ad4cfc66}{%
+           family={Kosmacher},
+           familyi={K\bibinitperiod},
+           given={Gabriel},
+           giveni={G\bibinitperiod}}}%
+        {{hash=e50c58c4c229ee0bccdf32419618b5ea}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Yichen},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=006177ab1acd7669e1071425d30c47bd}{%
+           family={Massman},
+           familyi={M\bibinitperiod},
+           given={Jeff},
+           giveni={J\bibinitperiod}}}%
+        {{hash=52c08e0bddadb177a2de74bbf36f1ded}{%
+           family={Palmer},
+           familyi={P\bibinitperiod},
+           given={Joseph},
+           giveni={J\bibinitperiod}}}%
+        {{hash=661717b7aa8799c1646f119dab075a62}{%
+           family={Thieme},
+           familyi={T\bibinitperiod},
+           given={Timothy},
+           giveni={T\bibinitperiod}}}%
+        {{hash=ae2c50d6a4960a207b0248bd93c317b7}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Jerry},
+           giveni={J\bibinitperiod}}}%
+        {{hash=d5125369d00f1d79a8ad3d95f46a6e8d}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Zheyu},
+           giveni={Z\bibinitperiod}}}%
+      }
+      \list{publisher}{3}{%
+        {SIGMA. Symmetry, Integrability}%
+        {Geometry: Methods}%
+        {Applications}%
+      }
+      \strng{namehash}{3dbd3fa8f768c323df62360c3a867af0}
+      \strng{fullhash}{02b39008901b72234f39aa96a3c03cd7}
+      \strng{bibnamehash}{02b39008901b72234f39aa96a3c03cd7}
+      \strng{authorbibnamehash}{02b39008901b72234f39aa96a3c03cd7}
+      \strng{authornamehash}{3dbd3fa8f768c323df62360c3a867af0}
+      \strng{authorfullhash}{02b39008901b72234f39aa96a3c03cd7}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Exploiting the relationship between 4-dimensional toric and semitoric integrable systems with Delzant and semitoric polygons, respectively, we develop techniques to compute certain equivariant packing densities and equivariant capacities of these systems by working exclusively with the polygons. This expands on results of Pelayo and Pelayo-Schmidt. We compute the densities of several important examples and we also use our techniques to solve the equivariant semitoric perfect packing problem, i.e., we list all semitoric polygons for which the associated semitoric system admits an equivariant packing which fills all but a set of measure zero of the manifold. This paper also serves as a concise and accessible introduction to Delzant and semitoric polygons in dimension four.}
+      \field{issn}{18150659}
+      \field{journaltitle}{SIGMA. Symmetry, Integrability and Geometry: Methods and Applications}
+      \field{month}{10}
+      \field{title}{Packing Densities of Delzant and Semitoric Polygons}
+      \field{volume}{19}
+      \field{year}{2023}
+      \true{nocite}
+      \field{pages}{081}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3842/SIGMA.2023.081
+      \endverb
+      \verb{file}
+      \verb sigma23-081.pdf
+      \endverb
+      \annotation{item}{author}{default}{2}{}{0}{highlight}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
