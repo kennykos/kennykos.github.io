@@ -25,3 +25,6 @@ assets/cs555
 *.out
 *.run.xml
 *.toc
+# ignore auto generated CV files
+assets/cv/main.pdf
+assets/cv/auto_sections/
