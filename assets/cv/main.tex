@@ -10,10 +10,18 @@
 
 % boolean flags
 \newif\iftoc
-\toctrue
+%\toctrue % NOTE: turn on when CV gets too long
+
+% title
+\title{Gabriel Kosmacher\hfill\includegraphics[height=\baselineskip]{../img/capsules}}
+\author{PhD Student, The University of Texas at Austin}
+\date{\url{kennykos.github.io}\titleseparator \email{gkosmacher@utexas.edu}\titleseparator \url{github.com/kennykos}}
+%\date{}
 
 \begin{document}
 \nocite{*}
+
+\maketitle
 
 \iftoc
 \tableofcontents
@@ -23,13 +31,14 @@
 \section{Education}
 \input{sections/education}
 \section{Research Experience}
+\input{sections/research}
 \section{Undergraduate Students}
 \input{sections/students}
+\section{Software}
+\input{sections/repositories.tex}
 \section{Publications}
 \input{sections/publications}
 \section{Talks}
 \input{sections/presentations}
-\section{Software}
-\input{sections/repositories.tex}
 
 \end{document}

@@ -7,7 +7,7 @@ from pathlib import Path
 
 DATA_DIR = Path("../../_data/")
 TEX_DIR = Path("sections/")
-TAB_HEADER = r"\begin{tabular}{ p{\leftwidth} | p{\rightwidth}}"
+TAB_HEADER = r"\noindent\begin{tabular}{ p{\leftwidth} | p{\rightwidth}}"
 TAB_FOOTER = "\n\\end{tabular}"
 FILE_HEADER = f"%THIS FILE WAS AUTO-GENERATED\n"
 
@@ -21,7 +21,7 @@ def markdown_to_latex(text):
     # code
     text = re.sub(r'``([^`]+)``', r'\\texttt{\1}', text)
 
-    return text
+    return text.replace("&", r"\&")
 
 def main():
     # read education yaml
@@ -51,7 +51,7 @@ def main():
         file.write(FILE_HEADER)
         users = ""
         users = [users.join(fr"\texttt{{\href{{https://github.com/{user}}}{{{user}}}}}, ") for user in repo_data["github_users"]][0][:-2]
-        file.write(f"{{\\centering \\emph{{My open-source contributions are from the}} {users} \\emph{{GitHub account.}}\\par}}")
+        file.write(f"{{\\centering \\emph{{My open-source software contributions are made from the}} {users} \\emph{{GitHub account.}}\\par}}")
 
         # begin write to table
         file.write(r"\vspace{1em}")
@@ -80,12 +80,28 @@ def main():
         file.write(FILE_HEADER)
         file.write(TAB_HEADER)
         for undergrad in undergrads:
-            print("start-year" in undergrad.keys())
             year = f"\n{undergrad["start-year"]} -- {undergrad["end-year"]}"
             info = f"{undergrad["name"]} ({undergrad["school"]})\\newline {undergrad["description"]}"
             file.write(rf"{year} & {info} \\")
         file.write(TAB_FOOTER)
 
+    # process research.yml
+    with open(DATA_DIR / "research.yml", "r") as file:
+        research_data = yaml.load(file, Loader=yaml.SafeLoader)
+
+    # write to research.tex
+    with open(TEX_DIR / "research.tex", "w") as file:
+        file.write(FILE_HEADER)
+        file.write(TAB_HEADER)
+        for i, research in enumerate(research_data):
+            year = f"\n{research["start-year"]} -- {research["end-year"]}"
+            info = rf"{research["title"]} -- {{\bf {research["description"]} }}\newline {markdown_to_latex(research["advisor"])}\newline {research["institution"]}"
+            print(info)
+            file.write(rf"{year} & {info} \\")
+            if i < len(research_data)-1:
+                file.write(r"\\")
+                file.write("\n")
+        file.write(TAB_FOOTER)
 
 
 

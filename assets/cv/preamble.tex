@@ -1,3 +1,4 @@
+\usepackage{graphicx}
 \usepackage{ifthen}
 \usepackage{titlesec}
 \usepackage[backend=biber,maxbibnames=99,sorting=ydnt,defernumbers=true, isbn=false, url=false,style=ieee]{biblatex}
@@ -8,6 +9,8 @@
     citecolor=green,
     urlcolor=burntOrange,
 }
+\usepackage{geometry}
+\geometry{letterpaper, margin=1.5in}
 
 % clear out section number, still usable with TOC
 % https://tex.stackexchange.com/questions/30122/generate-table-of-contents-when-section-sections-without-numbering-has-been
@@ -16,7 +19,7 @@
 
 % flush section titles to the left
 \titleformat{\section}{\normalfont\Large\bfseries\raggedright}{\thesection}{0em}{}
-\titleformat{\subsection}{\normalfont\large\bfseries\raggedright}{\thesubsection}{0em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries\centering}{\thesubsection}{0em}{}
 
 
 % https://tex.stackexchange.com/questions/73136/make-specific-author-bold-using-biblatex
@@ -29,3 +32,17 @@
   \ifitemannotation{highlight}
     {\textbf{#1}}
     {#1}}
+
+
+% Source - https://tex.stackexchange.com/a/570447
+% Posted by Bernard
+% Retrieved 2026-08-30, License - CC BY-SA 4.0
+
+\usepackage{titling}
+\setlength{\droptitle}{-8ex}
+\pretitle{\begin{flushleft}\Huge\bfseries}
+\posttitle{\par\end{flushleft}}
+\preauthor{\begin{flushleft}\Large}
+\postauthor{\end{flushleft}}
+\predate{\begin{flushleft}}
+\postdate{\end{flushleft}}
