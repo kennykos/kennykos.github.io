@@ -1,8 +1,10 @@
-main=kosmacher_cv
+main=main
 summaryf=summary
 compile=latexmk -lualatex -silent -use-make
+PYTHON = python3
 
 all:
+	$(PYTHON) preprocess.py
 	${compile} ${main}
 	@echo "Done ....!"
 

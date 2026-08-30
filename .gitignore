@@ -24,3 +24,4 @@ assets/cs555
 *.blg
 *.out
 *.run.xml
+*.toc
