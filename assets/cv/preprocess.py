@@ -6,7 +6,7 @@ import yaml
 from pathlib import Path
 
 DATA_DIR = Path("../../_data/")
-TEX_DIR = Path("sections/")
+TEX_DIR = Path("auto_sections/")
 TAB_HEADER = r"\noindent\begin{tabular}{ p{\leftwidth} | p{\rightwidth}}"
 TAB_FOOTER = "\n\\end{tabular}"
 FILE_HEADER = f"%THIS FILE WAS AUTO-GENERATED\n"
@@ -24,6 +24,8 @@ def markdown_to_latex(text):
     return text.replace("&", r"\&")
 
 def main():
+    # create auto section directory
+    TEX_DIR.mkdir(parents=True, exist_ok=True)
     # read education yaml
     with open(DATA_DIR / "education.yml", "r") as file:
         edu_data = yaml.load(file, Loader=yaml.SafeLoader)
