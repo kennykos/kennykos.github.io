@@ -24,6 +24,26 @@ jobs:
     - name: Install deps
       run: |
         npm install -g mermaid.cli
+    - name: Setup Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.12'
+    - name: Install Python deps (for CV preprocess)
+      run: pip install pyyaml
+    - name: Install LaTeX (lualatex + latexmk, for CV build)
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y \
+          texlive-luatex \
+          texlive-latex-recommended \
+          texlive-latex-extra \
+          texlive-fonts-recommended \
+          latexmk
+    - name: Build CV
+      run: |
+        cd assets/cv
+        make all
+        ls -la main.pdf
     - name: Setup deploy options
       id: setup
       run: |
@@ -39,4 +59,4 @@ jobs:
     - name: Deploy website 
       run:  yes | bash bin/deploy --verbose ${{ steps.setup.outputs.NO_PUSH }}
                     --src ${{ steps.setup.outputs.SRC_BRANCH }} 
-                    --deploy ${{ steps.setup.outputs.DEPLOY_BRANCH }} 
+                    --deploy ${{ steps.setup.outputs.DEPLOY_BRANCH }}
