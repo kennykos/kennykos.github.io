@@ -37,8 +37,10 @@ jobs:
           texlive-luatex \
           texlive-latex-recommended \
           texlive-latex-extra \
+          texlive-bibtex-extra \
           texlive-fonts-recommended \
-          latexmk
+          latexmk \
+          biber
     - name: Build CV
       run: |
         cd assets/cv
