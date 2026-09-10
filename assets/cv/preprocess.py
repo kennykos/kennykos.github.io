@@ -98,9 +98,25 @@ def main():
         for i, research in enumerate(research_data):
             year = f"\n{research["start-year"]} -- {research["end-year"]}"
             info = rf"{research["title"]} -- {{\bf {research["description"]} }}\newline {markdown_to_latex(research["advisor"])}\newline {research["institution"]}"
-            print(info)
             file.write(rf"{year} & {info} \\")
             if i < len(research_data)-1:
+                file.write(r"\\")
+                file.write("\n")
+        file.write(TAB_FOOTER)
+
+    # preprocess seminars.yml
+    with open(DATA_DIR / "seminars.yml", "r") as file:
+        sem_data = yaml.load(file, Loader=yaml.SafeLoader)
+
+    # write to seminars.tex
+    with open(TEX_DIR / "seminars.tex", "w") as file:
+        file.write(FILE_HEADER)
+        file.write(TAB_HEADER)
+        for i, sem in enumerate(sem_data):
+            year = f"\n{sem["start-year"]} -- {sem["end-year"]}"
+            info = rf"{sem["name"]} ({sem["place"]})\newline Co-organized with {sem["coorganizers"]}\newline {sem["description"]}"
+            file.write(rf"{year} & {info} \\")
+            if i < len(sem_data)-1:
                 file.write(r"\\")
                 file.write("\n")
         file.write(TAB_FOOTER)
