@@ -2,7 +2,7 @@
 layout: history
 permalink: /presentations/
 title: Presentations
-years: [2025]
+years: [2026, 2025]
 nav: true
 nav_order: 2
 ---

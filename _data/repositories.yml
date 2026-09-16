@@ -15,4 +15,8 @@ github_repos:
       JIT compilation, building and installing on MacOS and AMD GPUs, documentation and continuous integration.
   - name: sandialabs/GenTen
     contributions: >
-      Implemented a matrix-free MTTKRP for dense tensors: [``MTTKRP_Dense_Perm_Kernel``](https://github.com/sandialabs/GenTen/blob/4ca65d5678029f08e3679ca72fadd34197cc65f5/src/Genten_MixedFormatOps.cpp#L720), the basis for the publication [*A Performance Portable Matrix Free Dense MTTKRP in GenTen*](https://arxiv.org/abs/2510.14891).
+      Implemented a new matrix-free MTTKRP kernel for dense tensors: [``MTTKRP_Dense_Perm_Kernel``](https://github.com/sandialabs/GenTen/blob/4ca65d5678029f08e3679ca72fadd34197cc65f5/src/Genten_MixedFormatOps.cpp#L720), the basis for the publication [*A Performance Portable Matrix Free Dense MTTKRP in GenTen*](https://arxiv.org/abs/2510.14891).
+  - name: EngineeringSoftware/pkdb
+    contributions: >
+      An  interactive debugger for performance portable Python HPC kernels.
+      Helped to develop benchmarks and examples, collaborated on architecture design and features.

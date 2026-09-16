@@ -53,20 +53,26 @@ def main():
         file.write(FILE_HEADER)
         users = ""
         users = [users.join(fr"\texttt{{\href{{https://github.com/{user}}}{{{user}}}}}, ") for user in repo_data["github_users"]][0][:-2]
-        file.write(f"{{\\centering \\emph{{My open-source software contributions are made from the}} {users} \\emph{{GitHub account.}}\\par}}")
+        #file.write(f"{{\\centering \\emph{{My open-source software contributions are made from the}} {users} \\emph{{GitHub account.}}\\par}}")
+        #file.write(r"\vspace{1em}")
 
         # begin write to table
-        file.write(r"\vspace{1em}")
         file.write(TAB_HEADER)
         for i, entry in enumerate(repo_data["github_repos"]):
             # parse entry to string
             name = entry["name"]
+            org, repo = name.split("/")
+            if len(org) > 15:
+                # try to split camel case
+
+                camel = re.findall(r'[A-Z][a-z]*', org)
+                name = r"\newline ".join(camel) + "/" + repo
             name = name.replace("/", r"/\newline ")
             name = r"\href{https://github.com/" + entry["name"] + r"}{\texttt{" + name + "}}"
 
             contributions = markdown_to_latex(entry["contributions"]).replace("_", r"\_")
             file.write(rf"{name} & {contributions}\\")
-            if i < len(edu_data)-1:
+            if i < len(repo_data["github_repos"])-1:
                 file.write(r"\\")
                 file.write("\n")
         file.write(TAB_FOOTER)
@@ -81,10 +87,13 @@ def main():
         undergrads = stu_data["Undergraduates"]
         file.write(FILE_HEADER)
         file.write(TAB_HEADER)
-        for undergrad in undergrads:
+        for i, undergrad in enumerate(undergrads):
             year = f"\n{undergrad["start-year"]} -- {undergrad["end-year"]}"
             info = f"{undergrad["name"]} ({undergrad["school"]})\\newline {undergrad["description"]}"
             file.write(rf"{year} & {info} \\")
+            if i < len(undergrads)-1:
+                file.write(r"\\")
+                file.write("\n")
         file.write(TAB_FOOTER)
 
     # process research.yml
@@ -121,6 +130,20 @@ def main():
                 file.write("\n")
         file.write(TAB_FOOTER)
 
+
+    # process awards.yml
+    with open(DATA_DIR / "awards.yml", "r") as file:
+        awards_data = yaml.load(file, Loader=yaml.SafeLoader)
+
+    # write to awards.tex
+    with open(TEX_DIR / "awards.tex", "w") as file:
+        file.write(FILE_HEADER)
+        file.write(TAB_HEADER)
+        for i, award in enumerate(awards_data):
+            year = award["year"]
+            info = markdown_to_latex(f"{award["issuer"]} {award["name"]}, *{award["result"]}*")
+            file.write(rf"{year} & {info} \\")
+        file.write(TAB_FOOTER)
 
 
 

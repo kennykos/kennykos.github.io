@@ -1,7 +1,8 @@
 \usepackage{graphicx}
 \usepackage{ifthen}
 \usepackage{titlesec}
-\usepackage[backend=biber,maxbibnames=99,sorting=ydnt,defernumbers=true, isbn=false, url=false,style=ieee]{biblatex}
+\usepackage[backend=biber,maxbibnames=99,sorting=ydnt,defernumbers=true, isbn=false, url=true,style=ieee]{biblatex}
+\DeclareFieldFormat{url}{\url{#1}}
 \usepackage{hyperref}
 \hypersetup{
     colorlinks=true,
